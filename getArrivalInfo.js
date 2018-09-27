@@ -3,12 +3,12 @@ let beautifyReply = require('./beautifyReply');
 
 module.exports = {
   getArrivalInfo: function (brtNo, brtDirection, bnodeId, brtClass) {
-      let form = {
-          brtNo: brtNo,
-          brtDirection: brtDirection,
-          bnodeId: bnodeId,
-          brtClass: brtClass
-      };
+    let form = {
+      brtNo: brtNo,
+      brtDirection: brtDirection,
+      bnodeId: bnodeId,
+      brtClass: brtClass
+    };
 
       request.post({
           url: 'http://its.ulsan.kr/busInfo/getArrivalInfo.do',
