@@ -1,4 +1,5 @@
 const request = require('request');
+let beautifyReply = require('./beautifyReply');
 
 module.exports = {
   getArrivalInfo: function (brtNo, brtDirection, bnodeId, brtClass) {
@@ -15,7 +16,10 @@ module.exports = {
       }, function (error,response,body) {
           if(!error && response.statusCode === 200){
               let data = JSON.parse(body);
-              console.log(data.param.list);
+              let list = data.param.list;
+              list.map(function (list) {
+                  beautifyReply.beautifyReply(brtNo, list.bidNo, list.bnodeName, list.remainTime);
+              })
           }
       });
   }
