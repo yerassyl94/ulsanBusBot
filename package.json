@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "parse" : "GOOGLE_APPLICATION_CREDENTIALS=parser/googlekey.json node parser/parser.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@google-cloud/translate": "^2.1.2",
     "node-telegram-bot-api": "^0.30.0",
     "request": "^2.88.0"
   }
