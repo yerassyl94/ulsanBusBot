@@ -3,6 +3,8 @@ let beautifyReply = require('./beautifyReply');
 
 module.exports = {
   getArrivalInfo: function (brtNo, brtDirection, bnodeId, brtClass) {
+      let replies = [];
+
     let form = {
       brtNo: brtNo,
       brtDirection: brtDirection,
@@ -18,8 +20,10 @@ module.exports = {
               let data = JSON.parse(body);
               let list = data.param.list;
               list.map(function (list) {
-                  beautifyReply.beautifyReply(brtNo, list.bidNo, list.bnodeName, list.remainTime);
-              })
+                  replies.push(beautifyReply.beautifyReply(brtNo, list.bidNo, list.bnodeName, list.remainTime));
+              });
+              console.log('2');
+              return replies;
           }
       });
   }
