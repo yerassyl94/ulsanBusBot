@@ -1,6 +1,7 @@
 const request = require('request');
 const translate = require('./translate/translate');
 const url = 'http://its.ulsan.kr/busInfo/getBusstopList.do';
+const fs = require('fs');
 
 function convert(bus) {
   return {
@@ -56,4 +57,6 @@ function parse(callback) {
 
 request.post({
   url: url,
-}, parse(console.log));
+}, parse(data =>
+  fs.writeFile("./parser/parsed.txt", JSON.stringify(data), (err) => console.log(err ? err : "The file was saved")))
+);
