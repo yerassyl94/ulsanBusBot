@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/stop_information_row" android:background="@drawable/list_selector" android:layout_width="wrap_content" android:layout_height="50.32dp">
+    <ImageView android:id="@+id/stop_information_item_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.26dp" android:layout_marginTop="10.56dp" android:layout_marginRight="4.62dp" android:scaleType="matrix"/>
+    <TextView android:textSize="14.6667dp" android:textStyle="bold" android:id="@+id/stop_information_bus_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.56dp"/>
+    <TextView android:textSize="16.6667dp" android:textStyle="bold" android:id="@+id/stop_information_item_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.56dp"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="7.26dp">
+        <TextView android:textSize="14.6667dp" android:textColor="#db2900" android:id="@+id/stop_information_item_arravaltime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="#555555" android:ellipsize="end" android:id="@+id/stop_information_item_desti" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50dp" android:layout_marginTop="6.66dp" android:layout_marginBottom="6.6dp" android:maxLines="1" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

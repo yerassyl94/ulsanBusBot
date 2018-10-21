@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.neighbor.ulsanbus">
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <application android:allowBackup="false" android:icon="@drawable/android_icon" android:label="@string/app_name" android:largeHeap="true" android:name="com.neighbor.ulsanbus.ui.WidgetData" android:theme="@android:style/Theme.NoTitleBar">
+        <meta-data android:name="com.kakao.sdk.AppKey" android:value="@string/kakao_app_key"/>
+        <provider android:authorities="com.neighbor.ulsanbus" android:enabled="true" android:exported="true" android:name="com.neighbor.ulsanbus.data.DataProvider"/>
+        <provider android:authorities="com.neighbor.ulsanbus.route" android:enabled="true" android:exported="false" android:name="com.neighbor.ulsanbus.data.RouteProvider"/>
+        <provider android:authorities="com.neighbor.ulsanbus.stop" android:enabled="true" android:exported="false" android:name="com.neighbor.ulsanbus.data.StopProvider"/>
+        <provider android:authorities="com.neighbor.ulsanbus.store" android:enabled="true" android:exported="false" android:name="com.neighbor.ulsanbus.data.TstoreProvider"/>
+        <provider android:authorities="com.neighbor.ulsanbus.notice" android:enabled="true" android:exported="false" android:name="com.neighbor.ulsanbus.data.NoticeProvider"/>
+        <provider android:authorities="com.neighbor.ulsanbus.emergency" android:enabled="true" android:exported="false" android:name="com.neighbor.ulsanbus.data.EmergencyProvider"/>
+        <activity android:launchMode="singleInstance" android:name="com.neighbor.ulsanbus.ui.UiLoading" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.google.zxing.client.android.CaptureActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.neighbor.ulsanbus.SCAN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SCAN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="zxing.appspot.com" android:path="/scan" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.google.com" android:path="/m/products/scan" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.google.co.uk" android:path="/m/products/scan" android:scheme="http"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.neighbor.ulsanbus.ui.UiAlarm" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.neighbor.ulsanbus.ui.UiFavorite" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.neighbor.ulsanbus.ui.UiInformation" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.neighbor.ulsanbus.ui.BlankActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.neighbor.ulsanbus.ui.UiMainTab" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.neighbor.ulsanbus.ui.UiSearchBusStop" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.neighbor.ulsanbus.ui.UiSearchRoute" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.neighbor.ulsanbus.ui.UiRouteInformation" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.neighbor.ulsanbus.ui.UiRouteInfoStopNames" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.neighbor.ulsanbus.ui.UiStopInformation" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.neighbor.ulsanbus.ui.UiBusStopPosition" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.neighbor.ulsanbus.ui.UiStopArrivalTime" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.neighbor.ulsanbus.ui.UiRouteArrivalTime" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.neighbor.ulsanbus.ui.UiFavoriteArrivalTime" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.neighbor.ulsanbus.ui.UiTimetable" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.neighbor.ulsanbus.ui.UiTransferInput" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.neighbor.ulsanbus.ui.UiTransferRouteMap" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.neighbor.ulsanbus.ui.UiTransferDetail" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.neighbor.ulsanbus.ui.UiMyPosition" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.neighbor.ulsanbus.ui.UiPopupList" android:screenOrientation="portrait" android:theme="@style/Theme.Translucent" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.neighbor.ulsanbus.ui.UiRouteMap" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.neighbor.ulsanbus.ui.UiNoticePopup" android:screenOrientation="portrait" android:theme="@style/Theme.Translucent"/>
+        <activity android:name="com.neighbor.ulsanbus.ui.UiDeletePopUp" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.neighbor.ulsanbus.ui.AlarmReceiver"/>
+        <activity android:name="com.neighbor.ulsanbus.ui.UiDirectRouteMap" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.neighbor.ulsanbus.ui.ConfigureWidget1" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
+        <receiver android:icon="@drawable/bus_background_1x1" android:name="com.neighbor.ulsanbus.ui.OneCellWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.neighbor.ulsanbus.widget1"/>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE_OPTIONS"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_1x1_provider"/>
+        </receiver>
+        <activity android:name="com.neighbor.ulsanbus.ui.ConfigureWidget2" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
+        <receiver android:icon="@drawable/background_4x1" android:name="com.neighbor.ulsanbus.ui.FourByOneCellWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE_OPTIONS"/>
+                <action android:name="com.neighbor.ulsanbus.widget2"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_4x1_provider"/>
+        </receiver>
+        <activity android:name="com.neighbor.ulsanbus.ui.ConfigureWidget3" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
+        <receiver android:icon="@drawable/background_4x2" android:name="com.neighbor.ulsanbus.ui.FourByTwoCellWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.neighbor.ulsanbus.widget3"/>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE_OPTIONS"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_4x2_provider"/>
+        </receiver>
+        <service android:exported="false" android:name="com.neighbor.ulsanbus.ui.UiWidgetService" android:permission="android.permission.BIND_REMOTEVIEWS"/>
+        <receiver android:name="com.neighbor.ulsanbus.ui.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:path="com.neighbor.ulsanbus" android:scheme="package"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.neighbor.ulsanbus.ui.FirstTab" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.neighbor.ulsanbus.ui.TabFirst" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.neighbor.ulsanbus.ui.TabSecond" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.neighbor.ulsanbus.ui.TabThird" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.neighbor.ulsanbus.ui.TabFourth" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.neighbor.ulsanbus.ui.TabFiveth" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.neighbor.ulsanbus.ui.TabSixth" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/preferences_name" android:name="com.google.zxing.client.android.PreferencesActivity"/>
+        <activity android:label="@string/share_name" android:name="com.google.zxing.client.android.encode.EncodeActivity">
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.ENCODE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/x-vcard"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/sbc_name" android:name="com.google.zxing.client.android.book.SearchBookContentsActivity" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SEARCH_BOOK_CONTENTS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/wa_name" android:name="com.google.zxing.client.android.wifi.WifiActivity" android:screenOrientation="landscape"/>
+        <activity android:label="@string/share_name" android:name="com.google.zxing.client.android.share.ShareActivity" android:screenOrientation="user" android:theme="@android:style/Theme.Light">
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SHARE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/bookmark_picker_name" android:name="com.google.zxing.client.android.share.BookmarkPickerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.PICK"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:label="@string/app_picker_name" android:name="com.google.zxing.client.android.share.AppPickerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.PICK"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.google.zxing.client.android.HelpActivity" android:screenOrientation="user">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.gun0912.tedpermission.TedPermissionActivity" android:theme="@style/Theme.Transparent.Permission"/>
+        <meta-data android:name="android.support.VERSION" android:value="26.1.0"/>
+        <meta-data android:name="android.arch.lifecycle.VERSION" android:value="27.0.0-SNAPSHOT"/>
+    </application>
+</manifest>

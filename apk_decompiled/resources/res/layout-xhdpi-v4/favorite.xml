@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/favor_background" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="5.66dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@+id/favorites_all_btn" android:background="@drawable/tab_favorite_all" android:layout_width="51.67dp" android:layout_height="29.66dp"/>
+            <Button android:id="@+id/favorites_bus_btn" android:background="@drawable/tab_favorite_bus" android:layout_width="51.67dp" android:layout_height="29.66dp"/>
+            <Button android:id="@+id/favorites_station_btn" android:background="@drawable/tab_favorite_station" android:layout_width="51.67dp" android:layout_height="29.66dp"/>
+            <Button android:id="@+id/favorites_arrive_btn" android:background="@drawable/tab_favorite_arrive" android:layout_width="51.67dp" android:layout_height="29.66dp"/>
+        </LinearLayout>
+        <TextView android:textSize="10.33dp" android:textStyle="bold" android:textColor="@color/light_text_color" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/favorite_noti_content"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/favorite_item_layout" android:padding="6.6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="match_parent" android:layout_height="17.67dp" android:src="@drawable/list_header" android:scaleType="fitXY"/>
+                <TextView android:textSize="9dp" android:textStyle="bold" android:textColor="#000000" android:id="@+id/favorite_header_textview" android:paddingLeft="7.26dp" android:paddingTop="3.96dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/info_notice_title"/>
+            </FrameLayout>
+            <ListView android:id="@+id/favorite_list" android:background="@drawable/list_border" android:layout_width="match_parent" android:layout_height="wrap_content" android:scrollingCache="false" android:divider="@color/list_divider_color" android:dividerHeight="0.6dp" android:fastScrollEnabled="true"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

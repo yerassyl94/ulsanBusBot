@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/loading_backgroud" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:src="@drawable/android_loading_bg" n1:scaleType="fitXY" />
+    <LinearLayout n1:layout_gravity="center" n1:orientation="horizontal" n1:id="@id/loading_prog_layout" n1:background="@drawable/progress_bg" n1:visibility="gone" n1:layout_width="226.66dip" n1:layout_height="44.659973dip">
+        <ProgressBar n1:layout_gravity="center" n1:id="@id/loading_progbar" n1:layout_width="152.0dip" n1:layout_height="11.0dip" n1:layout_marginLeft="20.0dip" n1:progressDrawable="@drawable/progressbar_custom" style="?android:progressBarStyleHorizontal" />
+        <TextView n1:textSize="13.0sp" n1:textStyle="bold" n1:textColor="#ff000000" n1:id="@id/loading_per_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="6.659973dip" n1:layout_marginTop="13.329987dip" n1:text="0 %" />
+    </LinearLayout>
+    <LinearLayout n1:gravity="bottom" n1:orientation="vertical" n1:id="@id/loading_button_layout" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginBottom="80.0dip">
+        <LinearLayout n1:layout_gravity="center" n1:orientation="horizontal" n1:id="@id/loading_button_layout_left" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+            <ImageButton n1:id="@id/loading_route_search_button" n1:background="@drawable/loading_route_pressed" n1:layout_width="86.0dip" n1:layout_height="86.0dip" />
+            <ImageButton n1:id="@id/loading_stop_search_button" n1:background="@drawable/loading_stop_pressed" n1:layout_width="86.0dip" n1:layout_height="86.0dip" n1:layout_marginLeft="6.0dip" />
+            <ImageButton n1:id="@id/loading_favorite_search_button" n1:background="@drawable/loading_favorite_pressed" n1:layout_width="86.0dip" n1:layout_height="86.0dip" n1:layout_marginLeft="6.0dip" />
+        </LinearLayout>
+        <LinearLayout n1:layout_gravity="center" n1:orientation="horizontal" n1:id="@id/loading_button_layout_right" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="6.0dip">
+            <ImageButton n1:id="@id/loading_transfer_search_button" n1:background="@drawable/loading_transfer_pressed" n1:layout_width="86.0dip" n1:layout_height="86.0dip" />
+            <ImageButton n1:id="@id/loading_mylocation_search_button" n1:background="@drawable/loading_mylocation_pressed" n1:layout_width="86.0dip" n1:layout_height="86.0dip" n1:layout_marginLeft="6.0dip" />
+            <ImageButton n1:id="@id/loading_info_button" n1:background="@drawable/loading_info_pressed" n1:layout_width="86.0dip" n1:layout_height="86.0dip" n1:layout_marginLeft="6.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

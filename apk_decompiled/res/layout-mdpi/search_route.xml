@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:id="@id/edit_input_background" n1:paddingLeft="6.659973dip" n1:paddingTop="4.0dip" n1:paddingBottom="3.2999878dip" n1:focusableInTouchMode="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <EditText n1:textSize="12.0dip" n1:id="@id/search_root_edittext" n1:background="@drawable/input_background" n1:paddingLeft="10.0dip" n1:paddingTop="6.0dip" n1:paddingBottom="6.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginRight="6.659973dip" n1:hint="@string/search_root_edittext_hint" n1:singleLine="true" n1:inputType="number" />
+    </RelativeLayout>
+    <View n1:background="@android:color/white" n1:layout_width="fill_parent" n1:layout_height="0.6dip" />
+    <LinearLayout n1:orientation="vertical" n1:id="@id/search_route_background" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="50.0dip" n1:layout_marginTop="4.659973dip">
+            <Button n1:id="@id/search_root_total_button" n1:background="@drawable/btn_route_all" n1:layout_width="36.659973dip" n1:layout_height="25.329987dip" />
+            <Button n1:id="@id/search_root_ib_button" n1:background="@drawable/btn_route_bus" n1:layout_width="36.659973dip" n1:layout_height="25.329987dip" />
+            <Button n1:id="@id/search_root_js_button" n1:background="@drawable/btn_route_express" n1:layout_width="36.659973dip" n1:layout_height="25.329987dip" />
+            <Button n1:id="@id/search_root_gs_button" n1:background="@drawable/btn_route_jisun" n1:layout_width="36.659973dip" n1:layout_height="25.329987dip" />
+            <Button n1:id="@id/search_root_me_button" n1:background="@drawable/btn_route_town" n1:layout_width="36.659973dip" n1:layout_height="25.329987dip" />
+            <Button n1:id="@id/search_root_lg_button" n1:background="@drawable/btn_route_limousine" n1:layout_width="36.659973dip" n1:layout_height="25.329987dip" />
+        </LinearLayout>
+        <TextView n1:textSize="12.0dip" n1:textStyle="bold" n1:textColor="#ff000000" n1:id="@id/search_route_textview" n1:background="@drawable/list_header" n1:paddingLeft="7.2599792dip" n1:paddingTop="3.9599915dip" n1:paddingBottom="3.9599915dip" n1:layout_width="fill_parent" n1:layout_height="23.0dip" n1:layout_marginLeft="8.219971dip" n1:layout_marginTop="8.659973dip" n1:layout_marginRight="8.219971dip" n1:text="@string/search_bus_stop_textview" />
+        <ListView n1:id="@id/search_root_listview" n1:paddingLeft="6.659973dip" n1:paddingRight="6.659973dip" n1:paddingBottom="6.659973dip" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_marginTop="8.659973dip" n1:scrollingCache="false" n1:divider="@color/second_line_background" n1:dividerHeight="0.6dip" n1:layout_weight="1.0" n1:fastScrollEnabled="true" />
+        <ListView n1:id="@id/search_recent_searchlistview" n1:paddingLeft="6.659973dip" n1:paddingRight="6.659973dip" n1:paddingBottom="6.659973dip" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:scrollingCache="false" n1:divider="@color/second_line_background" n1:dividerHeight="0.6dip" n1:layout_weight="1.0" n1:fastScrollEnabled="true" />
+    </LinearLayout>
+</LinearLayout>

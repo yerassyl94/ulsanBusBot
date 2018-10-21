@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <LinearLayout n1:orientation="vertical" n1:id="@id/transdetail_background" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <LinearLayout n1:orientation="horizontal" n1:paddingLeft="12.659973dip" n1:paddingTop="12.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:textSize="9.469971dip" n1:textStyle="bold" n1:textColor="#ff000000" n1:id="@id/transdetail_departure_stop" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+            <ImageView n1:id="@id/transfer_start_arrow" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="2.6599731dip" n1:src="@drawable/arrow" />
+            <TextView n1:textSize="9.469971dip" n1:textStyle="bold" n1:textColor="#ff000000" n1:id="@id/transdetail_destination_stop" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout n1:orientation="horizontal" n1:paddingLeft="12.659973dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="8.0dip">
+            <TextView n1:textSize="8.359985dip" n1:textStyle="bold" n1:textColor="#ffe2473f" n1:id="@id/transdetail_take_time" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+            <ImageView n1:layout_width="2.0dip" n1:layout_height="10.0dip" n1:layout_marginLeft="3.3299866dip" n1:src="@drawable/transdetail_stop_seperator" n1:scaleType="fitXY" />
+            <TextView n1:textSize="8.359985dip" n1:textStyle="bold" n1:textColor="#ff555555" n1:id="@id/transdetail_translation_info" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="3.3299866dip" />
+        </LinearLayout>
+        <RelativeLayout n1:id="@id/transdetail_update_layout" n1:background="@drawable/list_header" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="22.659973dip" n1:layout_marginLeft="6.659973dip" n1:layout_marginTop="6.659973dip" n1:layout_marginRight="6.659973dip">
+            <ImageView n1:id="@id/transdetail_time_icon" n1:layout_width="11.333313dip" n1:layout_height="11.333313dip" n1:layout_marginLeft="3.0dip" n1:layout_marginTop="6.5999756dip" n1:src="@drawable/icon_time" />
+            <TextView n1:textSize="7.919983sp" n1:textStyle="bold" n1:textColor="#ff000000" n1:id="@id/transdetail_update_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="2.0dip" n1:layout_marginTop="6.5999756dip" n1:layout_toRightOf="@id/transdetail_time_icon" />
+            <Button n1:id="@id/btn_transdetail_update" n1:background="@drawable/btn_icon_refresh" n1:layout_width="30.0dip" n1:layout_height="25.666656dip" n1:layout_marginRight="6.6666565dip" n1:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout n1:id="@id/transdetail_first_row" n1:background="@color/list_row_color" n1:paddingBottom="5.3299866dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="6.659973dip" n1:layout_marginRight="6.659973dip" n1:layout_marginBottom="0.6dip">
+            <ImageView n1:id="@id/transferdetail_begin_icon" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="6.0dip" n1:layout_marginTop="6.0dip" n1:layout_marginBottom="5.3299866dip" n1:src="@drawable/icon_transfer_start_stop" n1:scaleType="center" />
+            <TextView n1:textSize="10.329987sp" n1:textStyle="bold" n1:textColor="#ff000000" n1:id="@id/transdetail_begin_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="3.3299866dip" n1:layout_marginTop="10.329987dip" n1:layout_toRightOf="@id/transferdetail_begin_icon" />
+        </RelativeLayout>
+        <ListView n1:id="@id/transdetail_route_list" n1:background="@drawable/list_border" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="6.659973dip" n1:layout_marginRight="6.659973dip" n1:scrollingCache="false" n1:divider="@color/list_divider_color" n1:dividerHeight="0.6dip" n1:fastScrollEnabled="true" />
+        <RelativeLayout n1:id="@id/transdetail_last_row" n1:background="@color/list_row_color" n1:paddingBottom="7.3299866dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="6.659973dip" n1:layout_marginTop="0.6dip" n1:layout_marginRight="6.659973dip">
+            <ImageView n1:id="@id/transferdetail_end_icon" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="6.0dip" n1:layout_marginTop="6.0dip" n1:layout_marginBottom="5.3299866dip" n1:src="@drawable/icon_transfer_end_stop" n1:scaleType="center" />
+            <TextView n1:textSize="10.329987sp" n1:textStyle="bold" n1:textColor="#ff000000" n1:id="@id/transdetail_end_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="3.3299866dip" n1:layout_marginTop="10.329987dip" n1:layout_toRightOf="@id/transferdetail_end_icon" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ProgressBar n2:layout_gravity="center" n2:id="@id/transdetail_update_progress" n2:layout_width="wrap_content" n2:layout_height="wrap_content"
+      xmlns:n2="http://schemas.android.com/apk/res/android" />
+</merge>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/search_popup_bg" android:layout_width="252dp" android:layout_height="346dp">
+        <TextView android:textSize="11.15sp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:id="@+id/transfer_stop_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="6.66dp"/>
+        <RelativeLayout android:paddingLeft="3.33dp" android:paddingRight="3.33dp" android:layout_width="248.67dp" android:layout_height="272.6641dp">
+            <ListView android:id="@+id/transfer_stops_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.33dp" android:scrollingCache="false" android:divider="@color/list_divider_color" android:dividerHeight="0.6dp"/>
+            <ListView android:id="@+id/transfer_index_list" android:layout_width="16dp" android:layout_height="wrap_content" android:layout_marginTop="22.66dp" android:layout_marginRight="7.33dp" android:scrollingCache="false" android:divider="@null" android:dividerHeight="0dp" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <LinearLayout android:background="#456981" android:layout_width="243dp" android:layout_height="wrap_content" android:layout_marginLeft="3.33dp">
+            <Button android:id="@+id/transfer_pop_cancel" android:background="@drawable/btn_com_empty" android:layout_width="236.66dp" android:layout_height="26dp" android:layout_marginLeft="3.33dp" android:layout_marginTop="6.6dp" android:layout_marginBottom="6.66dp" android:text="@string/cancel"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

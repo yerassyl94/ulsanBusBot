@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@drawable/info_version_bg" android:layout_width="238.3333dp" android:layout_height="166.6667dp" android:layout_marginTop="46.6667dp">
+        <TextView android:textSize="11.15sp" android:textStyle="bold" android:textColor="#ffffff" android:id="@+id/version_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/info_version_title" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="11.15sp" android:textStyle="bold" android:textColor="#ffffff" android:id="@+id/information_app_version_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/version_title" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="342dp" android:layout_height="wrap_content" android:layout_marginLeft="33.33dp" android:layout_marginTop="51dp">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/info_route_version_img" android:layout_width="91.6667dp" android:layout_height="110dp" android:src="@drawable/info_version_route" android:scaleType="fitXY"/>
+            <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="#333333" android:gravity="center" android:id="@+id/information_route_version_textview" android:layout_width="77.33dp" android:layout_height="wrap_content" android:layout_below="@+id/info_route_version_img"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.33dp">
+            <ImageView android:id="@+id/info_stop_version_img" android:layout_width="91.6667dp" android:layout_height="110dp" android:src="@drawable/info_version_station" android:scaleType="fitXY"/>
+            <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="#333333" android:gravity="center" android:id="@+id/information_stop_version_textview" android:layout_width="77.33dp" android:layout_height="wrap_content" android:layout_below="@+id/info_stop_version_img"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.33dp">
+            <ImageView android:id="@+id/info_timetable_version_img" android:layout_width="91.6667dp" android:layout_height="110dp" android:src="@drawable/info_version_timetable" android:scaleType="fitXY"/>
+            <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="#333333" android:gravity="center" android:id="@+id/information_bustime_version_textview" android:layout_width="77.33dp" android:layout_height="wrap_content" android:layout_below="@+id/info_timetable_version_img"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

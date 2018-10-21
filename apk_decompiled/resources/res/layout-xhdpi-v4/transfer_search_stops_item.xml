@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/popup_list_selector" android:layout_width="match_parent" android:layout_height="27dp">
+    <TextView android:textSize="11dp" android:textStyle="bold" android:textColor="#000000" android:id="@+id/transfer_search_stop_name" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginLeft="8.33dp" android:layout_marginTop="3.33dp"/>
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <SurfaceView n1:id="@id/preview_view" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_centerInParent="true" />
+    <com.google.zxing.client.android.ViewfinderView n1:id="@id/viewfinder_view" n1:background="@color/transparent" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <LinearLayout n1:orientation="vertical" n1:id="@id/result_view" n1:background="@color/result_view" n1:padding="4.0dip" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:padding="12.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+            <LinearLayout n1:gravity="center|right" n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="fill_parent">
+                <ImageView n1:id="@id/barcode_image_view" n1:layout_width="160.0dip" n1:layout_height="wrap_content" n1:layout_marginBottom="4.0dip" n1:scaleType="centerInside" n1:adjustViewBounds="true" n1:maxWidth="160.0dip" n1:maxHeight="160.0dip" />
+                <LinearLayout n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                    <TextView n1:textSize="14.0sp" n1:textStyle="bold" n1:textColor="@color/result_minor_text" n1:id="@id/format_text_view_label" n1:paddingRight="4.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/msg_default_format" />
+                    <TextView n1:textSize="14.0sp" n1:textColor="@color/result_minor_text" n1:id="@id/format_text_view" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                    <TextView n1:textSize="14.0sp" n1:textStyle="bold" n1:textColor="@color/result_minor_text" n1:id="@id/type_text_view_label" n1:paddingRight="4.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/msg_default_type" />
+                    <TextView n1:textSize="14.0sp" n1:textColor="@color/result_minor_text" n1:id="@id/type_text_view" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                    <TextView n1:textSize="14.0sp" n1:textStyle="bold" n1:textColor="@color/result_minor_text" n1:id="@id/time_text_view_label" n1:paddingRight="4.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/msg_default_time" />
+                    <TextView n1:textSize="14.0sp" n1:textColor="@color/result_minor_text" n1:id="@id/time_text_view" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                    <TextView n1:textSize="14.0sp" n1:textStyle="bold" n1:textColor="@color/result_minor_text" n1:id="@id/meta_text_view_label" n1:paddingRight="4.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/msg_default_meta" />
+                    <TextView n1:textSize="14.0sp" n1:textColor="@color/result_minor_text" n1:id="@id/meta_text_view" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <ScrollView n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                <LinearLayout n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                    <TextView n1:textSize="22.0sp" n1:textColor="@color/result_text" n1:textColorLink="@color/result_text" n1:autoLink="web" n1:id="@id/contents_text_view" n1:paddingLeft="12.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+                    <TextView n1:textSize="14.0sp" n1:textColor="@color/result_text" n1:textColorLink="@color/result_text" n1:autoLink="web" n1:id="@id/contents_supplement_text_view" n1:padding="24.0dip" n1:clickable="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+        <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@id/result_button_view" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <Button n1:textSize="14.0sp" n1:visibility="gone" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0" />
+            <Button n1:textSize="14.0sp" n1:visibility="gone" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0" />
+            <Button n1:textSize="14.0sp" n1:visibility="gone" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0" />
+            <Button n1:textSize="14.0sp" n1:visibility="gone" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0" />
+            <Button n1:textSize="14.0sp" n1:id="@id/shopper_button" n1:visibility="gone" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/button_google_shopper" n1:drawableLeft="@drawable/shopper_icon" n1:drawablePadding="4.0dip" n1:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView n1:textSize="14.0sp" n1:textColor="@color/status_text" n1:layout_gravity="bottom|center" n1:id="@id/status_view" n1:background="@color/transparent" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/msg_default_status" />
+</FrameLayout>

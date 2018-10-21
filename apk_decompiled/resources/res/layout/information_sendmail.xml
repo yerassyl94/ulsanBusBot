@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/background_nomal" android:padding="6.6dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/notice_title_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="match_parent" android:layout_height="26.67dp" android:src="@drawable/list_header" android:scaleType="fitXY"/>
+        <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="#000000" android:paddingLeft="7.26dp" android:paddingTop="3.96dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/send_complain"/>
+    </FrameLayout>
+    <EditText android:gravity="top" android:id="@+id/notice_complain_content" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1" android:inputType="textMultiLine"/>
+    <Button android:textSize="12dp" android:textStyle="bold" android:id="@+id/notice_submit" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/send_email"/>
+</LinearLayout>

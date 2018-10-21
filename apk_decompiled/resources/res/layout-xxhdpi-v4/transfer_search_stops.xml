@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center" android:layout_width="280dp" android:layout_height="409.3281dp">
+    <ImageView android:layout_width="280dp" android:layout_height="416dp" android:src="@drawable/search_popup_bg" android:scaleType="fitXY"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="280dp" android:layout_height="357dp">
+        <TextView android:textSize="13.33dp" android:textStyle="bold" android:textColor="#ffffff" android:layout_gravity="center" android:id="@+id/transfer_stop_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.66dp" android:layout_marginTop="6.67dp" android:layout_marginRight="6.66dp">
+            <ListView android:id="@+id/transfer_stops_list" android:layout_width="264dp" android:layout_height="wrap_content" android:layout_marginLeft="3.33dp" android:layout_marginRight="3.33dp" android:scrollingCache="false" android:divider="@color/list_divider_color" android:dividerHeight="0.6dp"/>
+            <ListView android:id="@+id/transfer_index_list" android:layout_width="16dp" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginRight="14.96dp" android:scrollingCache="false" android:divider="@null" android:dividerHeight="0dp" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <Button android:layout_gravity="bottom" android:id="@+id/transfer_pop_cancel" android:background="@drawable/btn_com_empty" android:layout_width="267dp" android:layout_height="29.33dp" android:layout_marginLeft="7dp" android:layout_marginRight="5dp" android:layout_marginBottom="6.66dp" android:text="@string/cancel"/>
+</FrameLayout>

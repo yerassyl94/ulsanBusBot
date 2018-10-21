@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textSize="12.0dip" n1:textStyle="bold" n1:textColor="#ff000000" n1:id="@id/information_header" n1:background="@drawable/list_header" n1:paddingLeft="7.2599792dip" n1:paddingTop="3.9599915dip" n1:layout_width="fill_parent" n1:layout_height="40.839996dip" n1:layout_marginLeft="6.659973dip" n1:layout_marginRight="6.659973dip" n1:text="@string/info_emergen_title" />
+    <ImageView n1:id="@id/information_emergency_gallery" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="6.659973dip" n1:layout_marginRight="6.659973dip" n1:layout_marginBottom="6.659973dip" n1:src="@drawable/information_emergency_content1" n1:scaleType="center" />
+</LinearLayout>

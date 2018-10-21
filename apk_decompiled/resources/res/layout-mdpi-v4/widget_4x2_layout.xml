@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/background_4x2" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="10dp" android:textColor="#000000" android:id="@+id/widget_text_stopname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_centerHorizontal="true"/>
+    <Button android:id="@+id/widget_refresh_info" android:background="@drawable/btn_icon_refresh4x2" android:layout_width="18.66dp" android:layout_height="18.66dp" android:layout_marginRight="4.66dp" android:layout_alignRight="@+id/widget_text_stopname" android:layout_alignParentRight="true"/>
+    <ListView android:id="@+id/widget_arrivallist" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="4.6dp" android:layout_marginTop="10dp" android:layout_marginBottom="5dp" android:scrollingCache="false" android:layout_below="@+id/widget_text_stopname"/>
+    <ProgressBar android:id="@+id/widget3_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

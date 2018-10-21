@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/widget1" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/widget1_background" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+    <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="#ffffff" android:ellipsize="end" android:id="@+id/widget1_stop_name" android:paddingLeft="5.33dp" android:paddingRight="5.33dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.33dp" android:layout_marginTop="13dp" android:singleLine="true" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="#ffa100" android:id="@+id/widget1_route_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.33dp" android:layout_marginTop="8dp" android:layout_below="@+id/widget1_stop_name" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="11dp" android:textStyle="bold" android:textColor="#242424" android:id="@+id/widget1_remain_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.33dp" android:layout_marginTop="2dp" android:layout_below="@+id/widget1_route_number" android:layout_centerHorizontal="true"/>
+    <ProgressBar android:id="@+id/widget1_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

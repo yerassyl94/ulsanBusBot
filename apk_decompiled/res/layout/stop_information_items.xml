@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="horizontal" n1:id="@id/stop_information_row" n1:background="@drawable/list_selector" n1:layout_width="wrap_content" n1:layout_height="34.319977dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/stop_information_item_image" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="7.2599792dip" n1:layout_marginTop="10.559998dip" n1:layout_marginRight="4.619995dip" n1:scaleType="matrix" />
+    <TextView n1:textSize="14.6666565dip" n1:textStyle="bold" n1:id="@id/stop_information_bus_type" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.5599976dip" />
+    <TextView n1:textSize="16.666656dip" n1:textStyle="bold" n1:id="@id/stop_information_item_number" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="6.5599976dip" />
+    <RelativeLayout n1:paddingTop="5.279999dip" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginRight="7.2599792dip">
+        <TextView n1:textSize="14.6666565dip" n1:textColor="#ffdb2900" n1:id="@id/stop_information_item_arravaltime" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_alignParentRight="true" />
+        <TextView n1:textSize="10.0dip" n1:textStyle="bold" n1:textColor="#ff555555" n1:ellipsize="end" n1:id="@id/stop_information_item_desti" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="50.0dip" n1:layout_marginBottom="6.5999756dip" n1:maxLines="1" n1:layout_alignParentRight="true" n1:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

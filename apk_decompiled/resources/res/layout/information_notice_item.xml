@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/notice_item_row" android:background="@drawable/list_selector" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <TextView android:textSize="10.6667dp" android:textStyle="bold" android:textColor="#000000" android:gravity="left" android:id="@+id/notice_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="4.66dp"/>
+        <ImageView android:id="@+id/notice_item_file_image" android:background="@drawable/icon_file" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="4.66dp"/>
+    </LinearLayout>
+    <TextView android:textSize="8dp" android:textColor="#888888" android:id="@+id/notice_item_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="0dp" android:layout_marginBottom="6dp"/>
+    <ImageView android:layout_width="wrap_content" android:layout_height="0.66dp" android:src="@drawable/notice_list_divider" android:scaleType="fitXY"/>
+    <TextView android:textSize="8.82sp" android:textColor="#000000" android:id="@+id/notice_item_content" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="8.66dp" android:layout_marginRight="8dp"/>
+    <TextView android:textSize="8.82sp" android:textColor="#000000" android:id="@+id/notice_item_content_file" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginBottom="11.33dp"/>
+</LinearLayout>

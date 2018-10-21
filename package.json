@@ -11,10 +11,16 @@
   "license": "ISC",
   "dependencies": {
     "@google-cloud/translate": "^2.1.2",
+    "fast-xml-parser": "^3.12.5",
     "geolib": "^2.0.24",
     "node-telegram-bot-api": "^0.30.0",
+    "object-mapper": "^5.0.0",
+    "pg": "^7.5.0",
+    "redis": "^2.8.0",
     "request": "^2.88.0",
     "request-promise": "^4.2.2",
-    "sleep": "^5.2.3"
+    "sleep": "^5.2.3",
+    "underscore": "^1.9.1",
+    "xml2js": "^0.4.19"
   }
 }

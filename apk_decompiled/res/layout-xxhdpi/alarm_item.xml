@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="@color/list_row_color" n1:layout_width="fill_parent" n1:layout_height="35.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textSize="14.0dip" n1:textColor="#ff000000" n1:id="@id/alarm_name" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginLeft="10.0dip" n1:layout_marginTop="6.659973dip" />
+    <ImageView n1:id="@id/alarm_check" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="6.659973dip" n1:layout_marginRight="20.0dip" n1:src="@drawable/btn_multicheck_on" n1:scaleType="fitXY" n1:layout_alignParentRight="true" />
+</RelativeLayout>

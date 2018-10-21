@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="horizontal" n1:background="@drawable/list_selector" n1:layout_width="wrap_content" n1:layout_height="44.319977dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/widget_bus_item_image" n1:layout_width="20.0dip" n1:layout_height="20.0dip" n1:layout_marginLeft="7.2599792dip" n1:layout_marginTop="10.559998dip" n1:layout_marginRight="4.619995dip" n1:scaleType="fitXY" />
+    <TextView n1:textSize="18.0dip" n1:textStyle="bold" n1:id="@id/widget_bus_item_bus_type" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.5599976dip" />
+    <TextView n1:textSize="22.329987dip" n1:textStyle="bold" n1:id="@id/widget_bus_item_number" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="6.5599976dip" />
+    <RelativeLayout n1:paddingTop="4.8799744dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginRight="7.2599792dip">
+        <TextView n1:textSize="17.0dip" n1:textStyle="bold" n1:textColor="#ffdb2900" n1:id="@id/widget_bus_item_arravaltime" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_alignParentRight="true" />
+        <TextView n1:textSize="9.659973dip" n1:textStyle="bold" n1:textColor="#ff555555" n1:id="@id/widget_bus_item_item_interval" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="6.5999756dip" n1:layout_alignParentRight="true" n1:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

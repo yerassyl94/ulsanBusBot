@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/search_bus_stop_row" android:background="@drawable/list_selector" android:paddingRight="8.33dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/search_bus_stop_limusine" android:layout_width="18.66dp" android:layout_height="18.66dp" android:layout_marginLeft="7.33dp" android:layout_marginTop="10.66dp" android:scaleType="matrix"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/search_bus_item_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/search_bus_stop_limusine">
+        <TextView android:textSize="16.66dp" android:textStyle="bold" android:textColor="#000000" android:id="@+id/search_bus_stop_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.33dp" android:layout_marginTop="6dp"/>
+        <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="#555555" android:id="@+id/search_bus_stop_item_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.33dp"/>
+    </LinearLayout>
+    <TextView android:textSize="12dp" android:textColor="#555555" android:id="@+id/search_bus_stop_item_searched_time" android:layout_width="match_parent" android:layout_height="26dp" android:layout_toRightOf="@+id/search_bus_item_layout"/>
+    <ImageView android:layout_gravity="right" android:layout_width="11.6667dp" android:layout_height="11.6667dp" android:layout_marginTop="13dp" android:layout_marginRight="5.6667dp" android:layout_marginBottom="10dp" android:src="@drawable/icon_select_selector" android:scaleType="fitXY" android:layout_alignRight="@+id/search_bus_stop_item_searched_time"/>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/favorite_item_row" android:background="@drawable/list_selector" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/favorite_category_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.66dp" android:scaleType="fitXY"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/favorite_item1_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.33dp">
+            <TextView android:textStyle="bold" android:layout_gravity="center" android:id="@+id/favorite_text_item1" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textStyle="bold" android:id="@+id/favorite_text_sub1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <TextView android:textStyle="bold" android:layout_gravity="center_vertical" android:id="@+id/favorite_text_item2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.33dp"/>
+    </LinearLayout>
+    <Button android:id="@+id/favorite_btn_alarm" android:background="@drawable/btn_favorite_alarm" android:focusable="false" android:visibility="gone" android:layout_width="26.3333dp" android:layout_height="24dp" android:layout_marginTop="2dp" android:layout_marginRight="3dp" android:layout_alignParentRight="true"/>
+</RelativeLayout>

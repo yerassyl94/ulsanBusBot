@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="horizontal" n1:id="@id/departure_layout" n1:paddingLeft="6.659973dip" n1:paddingTop="4.0dip" n1:focusableInTouchMode="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <AutoCompleteTextView n1:textSize="13.0dip" n1:id="@id/transfer_start_edittext" n1:background="@drawable/input_background" n1:paddingLeft="9.98999dip" n1:paddingTop="6.0dip" n1:paddingBottom="6.659973dip" n1:layout_width="0.0dip" n1:layout_height="32.665985dip" n1:hint="@string/transfer_start_input_text" n1:singleLine="true" n1:layout_weight="0.7" />
+        <Button n1:id="@id/btn_transfer_start" n1:background="@drawable/btn_icon_search" n1:layout_width="29.666656dip" n1:layout_height="32.665985dip" n1:layout_marginLeft="4.5999756dip" />
+        <Button n1:id="@id/btn_transfer_start_map" n1:background="@drawable/map_btn_selector" n1:layout_width="29.666656dip" n1:layout_height="32.0dip" n1:layout_marginLeft="4.5999756dip" n1:layout_marginRight="10.0dip" />
+    </LinearLayout>
+    <LinearLayout n1:orientation="horizontal" n1:id="@id/destination_layout" n1:paddingLeft="6.659973dip" n1:paddingTop="3.3299866dip" n1:paddingBottom="3.2999878dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <AutoCompleteTextView n1:textSize="13.0dip" n1:id="@id/transfer_dest_edittext" n1:background="@drawable/input_background" n1:paddingLeft="9.98999dip" n1:paddingTop="6.0dip" n1:paddingBottom="6.0dip" n1:layout_width="0.0dip" n1:layout_height="32.0dip" n1:hint="@string/transfer_end_input_text" n1:singleLine="true" n1:layout_weight="0.7" />
+        <Button n1:id="@id/btn_transfer_dest_search" n1:background="@drawable/btn_icon_search" n1:layout_width="29.666656dip" n1:layout_height="32.0dip" n1:layout_marginLeft="4.5999756dip" />
+        <Button n1:id="@id/btn_transfer_dest_map" n1:background="@drawable/map_btn_selector" n1:layout_width="29.666656dip" n1:layout_height="32.0dip" n1:layout_marginLeft="4.5999756dip" n1:layout_marginRight="10.0dip" />
+    </LinearLayout>
+    <ScrollView n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <FrameLayout n1:orientation="vertical" n1:id="@id/content_background" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <LinearLayout n1:gravity="center_horizontal" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <Button n1:id="@id/btn_transfer_route_search" n1:background="@drawable/btn_search" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="6.659973dip" />
+            </LinearLayout>
+            <ProgressBar n1:layout_gravity="center_horizontal" n1:id="@id/transfer_route_progress" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="70.0dip" />
+            <RelativeLayout n1:id="@id/transfer_list_layout" n1:paddingLeft="6.659973dip" n1:paddingRight="6.659973dip" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="18.659973dip">
+                <LinearLayout n1:orientation="vertical" n1:id="@id/direct_route_layout" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <TextView n1:textSize="11.333313dip" n1:textStyle="bold" n1:textColor="#ff000000" n1:paddingLeft="6.659973dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="18.659973dip" n1:text="@string/transfer_dir_result_title" />
+                    <ListView n1:id="@id/direct_route_list" n1:background="@drawable/list_border" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="1.3299866dip" n1:scrollingCache="false" n1:divider="@color/list_divider_color" n1:dividerHeight="0.6dip" n1:fastScrollEnabled="true" />
+                </LinearLayout>
+                <LinearLayout n1:orientation="vertical" n1:id="@id/transfer_route_layout" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@id/direct_route_layout">
+                    <TextView n1:textSize="11.333313dip" n1:textStyle="bold" n1:textColor="#ff000000" n1:paddingLeft="6.659973dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="18.659973dip" n1:text="@string/transfer_trans_result_title" />
+                    <ListView n1:id="@id/transfer_route_list" n1:background="@drawable/list_border" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="1.3299866dip" n1:scrollingCache="false" n1:divider="@color/list_divider_color" n1:dividerHeight="0.6dip" n1:fastScrollEnabled="false" />
+                </LinearLayout>
+            </RelativeLayout>
+        </FrameLayout>
+    </ScrollView>
+</LinearLayout>

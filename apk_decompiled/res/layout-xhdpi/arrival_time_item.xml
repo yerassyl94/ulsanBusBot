@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/arrival_bus_layout" n1:layout_width="wrap_content" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:id="@id/arrival_bus_image1" n1:layout_width="128.69998dip" n1:layout_height="54.119995dip" n1:layout_marginLeft="13.33197dip">
+        <TextView n1:textSize="9.0dip" n1:textStyle="bold" n1:textColor="#ffffffff" n1:id="@id/arrival_bus_order" n1:paddingLeft="8.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="2.0dip" />
+    </FrameLayout>
+    <RelativeLayout n1:background="@drawable/list_box" n1:layout_width="150.47998dip" n1:layout_height="100.5dip" n1:layout_marginLeft="6.659973dip" n1:layout_marginTop="7.325989dip">
+        <TextView n1:textSize="11.0dip" n1:textStyle="bold" n1:textColor="#ff000000" n1:id="@id/arrival_bus_order_text" n1:layout_width="150.47998dip" n1:layout_height="20.839996dip" n1:layout_marginLeft="7.2599792dip" n1:layout_marginTop="3.9599915dip" />
+        <TextView n1:textSize="14.6666565dip" n1:textColor="#ff222222" n1:gravity="center_horizontal" n1:id="@id/arrival_bus_info" n1:paddingTop="0.6600001dip" n1:layout_width="150.47998dip" n1:layout_height="18.319977dip" n1:layout_below="@id/arrival_bus_order_text" />
+        <TextView n1:textSize="14.6666565dip" n1:textColor="#ffe36042" n1:gravity="center_horizontal" n1:id="@id/arrival_bus_time" n1:layout_width="150.47998dip" n1:layout_height="18.319977dip" n1:layout_marginTop="6.5999756dip" n1:layout_below="@id/arrival_bus_info" />
+        <TextView n1:textSize="14.6666565dip" n1:textColor="#ff222222" n1:gravity="center_horizontal" n1:id="@id/arrival_bus_remain_cnt" n1:layout_width="150.47998dip" n1:layout_height="18.319977dip" n1:layout_marginTop="6.5999756dip" n1:layout_below="@id/arrival_bus_time" />
+    </RelativeLayout>
+</LinearLayout>

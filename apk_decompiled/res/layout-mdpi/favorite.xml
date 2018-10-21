@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/favor_background" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:scaleType="fitXY" />
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:paddingTop="5.659973dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <Button n1:id="@id/favorites_all_btn" n1:background="@drawable/tab_favorite_all" n1:layout_width="49.329987dip" n1:layout_height="25.329987dip" />
+            <Button n1:id="@id/favorites_bus_btn" n1:background="@drawable/tab_favorite_bus" n1:layout_width="49.329987dip" n1:layout_height="25.329987dip" />
+            <Button n1:id="@id/favorites_station_btn" n1:background="@drawable/tab_favorite_station" n1:layout_width="49.329987dip" n1:layout_height="25.329987dip" />
+            <Button n1:id="@id/favorites_arrive_btn" n1:background="@drawable/tab_favorite_arrive" n1:layout_width="49.329987dip" n1:layout_height="25.329987dip" />
+        </LinearLayout>
+        <TextView n1:textSize="10.329987dip" n1:textStyle="bold" n1:textColor="@color/light_text_color" n1:gravity="center" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="3.0dip" n1:text="@string/favorite_noti_content" />
+        <LinearLayout n1:orientation="vertical" n1:id="@id/favorite_item_layout" n1:padding="6.5999756dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="8.0dip">
+            <FrameLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <ImageView n1:layout_width="fill_parent" n1:layout_height="17.669983dip" n1:src="@drawable/list_header" n1:scaleType="fitXY" />
+                <TextView n1:textSize="9.0dip" n1:textStyle="bold" n1:textColor="#ff000000" n1:id="@id/favorite_header_textview" n1:paddingLeft="7.2599792dip" n1:paddingTop="3.9599915dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/info_notice_title" />
+            </FrameLayout>
+            <ListView n1:id="@id/favorite_list" n1:background="@drawable/list_border" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:scrollingCache="false" n1:divider="@color/list_divider_color" n1:dividerHeight="0.6dip" n1:fastScrollEnabled="true" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

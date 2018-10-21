@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/routeshow_bus_stop_row" android:background="@drawable/list_selector" android:layout_width="match_parent" android:layout_height="34dp">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <ImageView android:id="@+id/routeshow_bus_stop_limusine" android:layout_width="18.66dp" android:layout_height="18.66dp" android:layout_marginLeft="3.33dp" android:layout_marginTop="6dp" android:scaleType="center"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/routeshow_bus_text_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="11.3333dp" android:textStyle="bold" android:textColor="#000000" android:id="@+id/routeshow_bus_stop_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.33dp" android:layout_marginTop="6dp"/>
+            <TextView android:textSize="11.3333dp" android:textStyle="bold" android:textColor="#555555" android:id="@+id/routeshow_bus_stop_item_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.33dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/routeshow_stop_line_start" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginRight="54dp" android:scaleType="fitXY" style="@style/route_stop_start"/>
+    <ImageView android:layout_gravity="right" android:id="@+id/routeshow_stop_line_mid" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginRight="54dp" android:scaleType="fitXY" style="@style/route_stop_mid"/>
+    <ImageView android:layout_gravity="right" android:id="@+id/routeshow_stop_line_end" android:layout_width="wrap_content" android:layout_height="34dp" android:layout_marginRight="54dp" android:scaleType="fitXY" style="@style/route_stop_end"/>
+    <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/routeshow_waypoint" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="51dp" android:src="@drawable/icon_return" android:scaleType="fitXY"/>
+    <LinearLayout android:layout_gravity="right|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/routeshow_bus_info" android:visibility="visible" android:layout_width="45dp" android:layout_height="wrap_content" android:layout_marginRight="8dp">
+        <ImageView android:id="@+id/routeshow_bus_location" android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/icon_current_location" android:scaleType="fitXY"/>
+        <TextView android:textSize="8dp" android:textStyle="bold" android:textColor="#797b7b" android:layout_gravity="center" android:id="@+id/routeshow_bus_no" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</FrameLayout>

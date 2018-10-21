@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="@drawable/list_selector" android:layout_width="wrap_content" android:layout_height="57dp">
+    <TextView android:textSize="23dp" android:textStyle="bold" android:id="@+id/widget_type_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.66dp" android:layout_marginTop="10dp"/>
+    <TextView android:textSize="11dp" android:textStyle="bold" android:textColor="#555555" android:id="@+id/widget_bus_destination" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="6.56dp"/>
+    <RelativeLayout android:paddingTop="4.88dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="7.26dp">
+        <TextView android:textSize="17dp" android:textStyle="bold" android:textColor="#000000" android:id="@+id/widget_bus_item_arravaltime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+        <TextView android:textSize="9.66dp" android:textStyle="bold" android:textColor="#555555" android:id="@+id/widget_bus_item_item_interval" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.6dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

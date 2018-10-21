@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center" n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:background="@drawable/info_version_bg" n1:layout_width="238.33331dip" n1:layout_height="166.66666dip" n1:layout_marginTop="46.666656dip">
+        <TextView n1:textSize="11.149994sp" n1:textStyle="bold" n1:textColor="#ffffffff" n1:id="@id/version_title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/info_version_title" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true" />
+        <TextView n1:textSize="11.149994sp" n1:textStyle="bold" n1:textColor="#ffffffff" n1:id="@id/information_app_version_textview" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_below="@id/version_title" n1:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <LinearLayout n1:orientation="horizontal" n1:layout_width="342.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="33.329987dip" n1:layout_marginTop="51.0dip">
+        <RelativeLayout n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+            <ImageView n1:id="@id/info_route_version_img" n1:layout_width="91.66666dip" n1:layout_height="110.0dip" n1:src="@drawable/info_version_route" n1:scaleType="fitXY" />
+            <TextView n1:textSize="13.0dip" n1:textStyle="bold" n1:textColor="#ff333333" n1:gravity="center" n1:id="@id/information_route_version_textview" n1:layout_width="77.32999dip" n1:layout_height="wrap_content" n1:layout_below="@id/info_route_version_img" />
+        </RelativeLayout>
+        <RelativeLayout n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="11.329987dip">
+            <ImageView n1:id="@id/info_stop_version_img" n1:layout_width="91.66666dip" n1:layout_height="110.0dip" n1:src="@drawable/info_version_station" n1:scaleType="fitXY" />
+            <TextView n1:textSize="13.0dip" n1:textStyle="bold" n1:textColor="#ff333333" n1:gravity="center" n1:id="@id/information_stop_version_textview" n1:layout_width="77.32999dip" n1:layout_height="wrap_content" n1:layout_below="@id/info_stop_version_img" />
+        </RelativeLayout>
+        <RelativeLayout n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="11.329987dip">
+            <ImageView n1:id="@id/info_timetable_version_img" n1:layout_width="91.66666dip" n1:layout_height="110.0dip" n1:src="@drawable/info_version_timetable" n1:scaleType="fitXY" />
+            <TextView n1:textSize="13.0dip" n1:textStyle="bold" n1:textColor="#ff333333" n1:gravity="center" n1:id="@id/information_bustime_version_textview" n1:layout_width="77.32999dip" n1:layout_height="wrap_content" n1:layout_below="@id/info_timetable_version_img" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

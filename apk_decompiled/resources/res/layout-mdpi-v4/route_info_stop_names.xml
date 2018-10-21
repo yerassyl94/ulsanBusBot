@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/route_stop_layout" android:paddingLeft="6.66dp" android:layout_width="match_parent" android:layout_height="33.66dp">
+        <ImageView android:id="@+id/route_stop_bus_img" android:layout_width="18.67dp" android:layout_height="19.33dp" android:layout_marginTop="6.66dp" android:src="@drawable/icon_bus" android:scaleType="fitXY"/>
+        <TextView android:textSize="14.6667dp" android:textStyle="bold" android:textColor="#ffffff" android:id="@+id/route_stop_route_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.66dp" android:layout_marginTop="6.66dp" android:layout_toRightOf="@+id/route_stop_bus_img"/>
+        <TextView android:textSize="14.6667dp" android:textStyle="bold" android:textColor="#ffffff" android:id="@+id/route_info_stop_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.66dp" android:layout_marginTop="6.66dp" android:layout_toRightOf="@+id/route_stop_route_type"/>
+        <TextView android:textSize="14.6667dp" android:textStyle="bold" android:textColor="#ffffff" android:id="@+id/route_info_stop_dir" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.66dp" android:layout_marginTop="6.66dp" android:layout_toRightOf="@+id/route_info_stop_number"/>
+        <Button android:id="@+id/btn_route_stop_switch" android:background="@drawable/btn_com_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginRight="6.66dp" android:layout_marginBottom="3.33dp" android:layout_alignParentRight="true"/>
+        <Button android:id="@+id/btn_route_stop_refesh" android:background="@drawable/btn_com_refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginRight="4dp" android:layout_marginBottom="3.33dp" android:layout_toLeftOf="@+id/btn_route_stop_switch"/>
+    </RelativeLayout>
+    <FrameLayout android:orientation="vertical" android:id="@+id/route_stop_background" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.7">
+        <ListView android:id="@+id/route_info_stop_list" android:background="@drawable/list_border" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="6.66dp" android:scrollingCache="false" android:divider="@color/list_divider_color" android:dividerHeight="0.6dp" android:fastScrollEnabled="false"/>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/route_info_stop_progress" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</LinearLayout>

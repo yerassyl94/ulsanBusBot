@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/transfer_row" android:background="@drawable/list_selector" android:layout_width="match_parent" android:layout_height="44.32dp">
+    <RelativeLayout android:paddingLeft="6dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="13.3333dp" android:textStyle="bold" android:id="@+id/transfer_fist_route" android:layout_width="80dp" android:layout_height="wrap_content" android:layout_marginTop="6.66dp"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/transfer_second_route_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/transfer_fist_route">
+            <ImageView android:id="@+id/transfer_start_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.66dp" android:src="@drawable/arrow"/>
+            <TextView android:textSize="13.3333dp" android:textStyle="bold" android:id="@+id/transfer_second_route" android:layout_width="80dp" android:layout_height="wrap_content" android:layout_marginLeft="6.66dp" android:layout_marginTop="6.66dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/transfer_third_route_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/transfer_second_route_layout">
+            <ImageView android:id="@+id/transfer_second_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.66dp" android:src="@drawable/arrow"/>
+            <TextView android:textSize="13.3333dp" android:textStyle="bold" android:id="@+id/transfer_third_route" android:layout_width="80dp" android:layout_height="wrap_content" android:layout_marginLeft="6.66dp" android:layout_marginTop="6.66dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3.66dp" android:layout_below="@+id/transfer_fist_route">
+            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="#db2900" android:id="@+id/transfer_travel_time" android:layout_width="80dp" android:layout_height="wrap_content"/>
+            <ImageView android:layout_width="2dp" android:layout_height="10dp" android:src="@drawable/route_vertical_line"/>
+            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="#555555" android:id="@+id/transfer_travel_stops" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.66dp"/>
+        </LinearLayout>
+        <Button android:id="@+id/btn_transfer_map" android:background="@drawable/btn_com_map" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.66dp" android:layout_marginBottom="6.66dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

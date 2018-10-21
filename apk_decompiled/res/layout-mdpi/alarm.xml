@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:scrollbarAlwaysDrawVerticalTrack="true" n1:orientation="vertical" n1:id="@id/alarm_background" n1:scrollbars="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textSize="17.329987sp" n1:textStyle="bold" n1:textColor="#ff000000" n1:gravity="center" n1:id="@id/title" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="6.659973dip" n1:text="알람시간 및 반복" />
+    <TimePicker n1:layout_gravity="center" n1:id="@id/timepicker" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_margin="6.659973dip" />
+    <TextView n1:textSize="14.0dip" n1:textStyle="bold" n1:textColor="#ff000000" n1:id="@id/alarm_repeat_textview" n1:background="@drawable/list_header" n1:paddingLeft="7.2599792dip" n1:paddingTop="3.9599915dip" n1:paddingBottom="3.9599915dip" n1:layout_width="fill_parent" n1:layout_height="35.0dip" n1:layout_marginLeft="6.659973dip" n1:layout_marginTop="6.659973dip" n1:layout_marginRight="6.659973dip" n1:text="반복 요일 선택" />
+    <ListView n1:id="@id/alarm_repeat_list" n1:background="@drawable/list_border" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="6.659973dip" n1:layout_marginRight="6.659973dip" n1:scrollingCache="false" n1:divider="@color/list_divider_color" n1:dividerHeight="0.6dip" n1:choiceMode="singleChoice" />
+    <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="45.0dip" n1:layout_marginTop="10.0dip" n1:layout_marginBottom="20.0dip">
+        <Button n1:textSize="14.0dip" n1:textStyle="bold" n1:textColor="#ff000000" n1:gravity="center" n1:id="@id/btn_ok" n1:background="@drawable/btn_com_empty" n1:padding="3.3299866dip" n1:layout_width="fill_parent" n1:layout_height="40.0dip" n1:layout_marginLeft="10.0dip" n1:layout_marginRight="10.0dip" n1:text="설정" n1:layout_weight="1.0" />
+        <Button n1:textSize="14.0dip" n1:textStyle="bold" n1:textColor="#ff000000" n1:gravity="center" n1:id="@id/btn_delete" n1:background="@drawable/btn_com_empty" n1:padding="3.3299866dip" n1:layout_width="fill_parent" n1:layout_height="40.0dip" n1:layout_marginLeft="10.0dip" n1:layout_marginRight="10.0dip" n1:text="삭제" n1:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

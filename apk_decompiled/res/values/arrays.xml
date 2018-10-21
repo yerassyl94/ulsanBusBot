@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alarm_date_week">
+        <item>일요일</item>
+        <item>월요일</item>
+        <item>화요일</item>
+        <item>수요일</item>
+        <item>목요일</item>
+        <item>금요일</item>
+        <item>토요일</item>
+    </string-array>
+    <array name="arrival_bus_type">
+        <item>@drawable/icon_bus_arrival_normal</item>
+        <item>@drawable/icon_bus_arrival_special</item>
+        <item>@drawable/icon_bus_arrival_limousine</item>
+        <item>@drawable/icon_bus_arrival_town</item>
+        <item>@drawable/icon_bus_arrival_jisun</item>
+    </array>
+    <string-array name="bus_order_digit">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="bus_order_text">
+        <item>첫번째버스</item>
+        <item>두번째버스</item>
+        <item>세번째버스</item>
+        <item>네번째버스</item>
+    </string-array>
+    <array name="bus_type">
+        <item>@drawable/icon_bus_basic</item>
+        <item>@drawable/icon_bus_special</item>
+        <item>@drawable/icon_bus_limousine</item>
+        <item>@drawable/icon_bus_town</item>
+        <item>@drawable/icon_bus_jisun</item>
+    </array>
+    <string-array name="bus_type_color">
+        <item>\#E5A244</item>
+        <item>\#376FCC</item>
+        <item>\#A24951</item>
+        <item>\#2B9793</item>
+        <item>\#736CB1</item>
+    </string-array>
+    <string-array name="popup_list_alphabet">
+        <item>전체</item>
+        <item>ㄱ</item>
+        <item>ㄴ</item>
+        <item>ㄷ</item>
+        <item>ㄹ</item>
+        <item>ㅁ</item>
+        <item>ㅂ</item>
+        <item>ㅅ</item>
+        <item>ㅇ</item>
+        <item>ㅈ</item>
+        <item>ㅊ</item>
+        <item>ㅋ</item>
+        <item>ㅌ</item>
+        <item>ㅍ</item>
+        <item>ㅎ</item>
+    </string-array>
+    <array name="sort_of_start_stop">
+        <item>@drawable/icon_transfer_start_stop</item>
+        <item>@drawable/icon_transfer_end_stop</item>
+    </array>
+    <string-array name="stop_info_header_type">
+        <item>일반</item>
+        <item>좌석</item>
+        <item>리무진</item>
+        <item>마을</item>
+        <item>지선</item>
+    </string-array>
+</resources>

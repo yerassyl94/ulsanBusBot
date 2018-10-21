@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:focusableInTouchMode="false" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/route_info_background" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:src="@drawable/background_nomal" n1:scaleType="fitXY" />
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <RelativeLayout n1:id="@id/routeinfomation_top_layout" n1:paddingLeft="6.659973dip" n1:layout_width="fill_parent" n1:layout_height="38.97dip">
+            <ImageView n1:id="@id/route_info_bus_img" n1:layout_width="21.333313dip" n1:layout_height="21.333313dip" n1:layout_marginTop="8.319977dip" n1:src="@drawable/icon_bus" n1:scaleType="fitXY" />
+            <TextView n1:textSize="18.659973dip" n1:textStyle="bold" n1:textColor="#ffffffff" n1:id="@id/route_info_route_type" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="4.659973dip" n1:layout_marginTop="6.659973dip" n1:layout_toRightOf="@id/route_info_bus_img" />
+            <TextView n1:textSize="22.329987dip" n1:textStyle="bold" n1:textColor="#ffffffff" n1:id="@id/route_info_route_number" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="4.659973dip" n1:layout_marginTop="5.3299866dip" n1:layout_toRightOf="@id/route_info_route_type" />
+            <Button n1:id="@id/btn_route_info_map" n1:background="@drawable/btn_map_text" n1:layout_width="52.0dip" n1:layout_height="30.299988dip" n1:layout_marginTop="4.5999756dip" n1:layout_marginRight="6.659973dip" n1:layout_marginBottom="3.3299866dip" n1:layout_alignParentRight="true" />
+            <Button n1:id="@id/btn_route_info_add_favorite" n1:background="@drawable/btn_favorite_text" n1:layout_width="66.0dip" n1:layout_height="30.299988dip" n1:layout_marginTop="4.5999756dip" n1:layout_marginRight="4.0dip" n1:layout_marginBottom="3.3299866dip" n1:layout_toLeftOf="@id/btn_route_info_map" />
+            <Button n1:id="@id/btn_route_info_buspos" n1:background="@drawable/btn_route_text" n1:layout_width="52.0dip" n1:layout_height="30.299988dip" n1:layout_marginTop="4.5999756dip" n1:layout_marginRight="4.659973dip" n1:layout_marginBottom="3.3299866dip" n1:layout_toLeftOf="@id/btn_route_info_add_favorite" />
+        </RelativeLayout>
+        <ScrollView n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <LinearLayout n1:orientation="vertical" n1:paddingLeft="6.659973dip" n1:paddingRight="6.659973dip" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0">
+                <LinearLayout n1:orientation="vertical" n1:id="@id/dir_group" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="11.659973dip" n1:layout_marginBottom="3.0dip">
+                        <Button n1:id="@id/route_type_dir_button0" style="@style/dirButton1" />
+                        <Button n1:id="@id/route_type_dir_button5" n1:layout_marginRight="0.0dip" style="@style/dirButton1" />
+                    </LinearLayout>
+                    <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="11.659973dip" n1:layout_marginBottom="3.0dip">
+                        <ImageView n1:id="@id/direction_prev" n1:background="@drawable/btn_prev" n1:layout_width="20.0dip" n1:layout_height="fill_parent" n1:layout_marginRight="3.0dip" />
+                        <com.neighbor.ulsanbus.util.ExtendedHorizontalScrollView n1:gravity="center" n1:orientation="horizontal" n1:id="@id/direction_scroller" n1:scrollbars="none" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_weight="0.9">
+                            <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+                                <Button n1:id="@id/route_type_dir_button1" style="@style/mySupportButton" />
+                                <Button n1:id="@id/route_type_dir_button2" style="@style/mySupportButton" />
+                                <Button n1:id="@id/route_type_dir_button3" style="@style/mySupportButton" />
+                                <Button n1:id="@id/route_type_dir_button4" style="@style/mySupportButton" />
+                                <Button n1:id="@id/route_type_dir_button6" style="@style/mySupportButton" />
+                                <Button n1:id="@id/route_type_dir_button7" style="@style/mySupportButton" />
+                                <Button n1:id="@id/route_type_dir_button8" style="@style/mySupportButton" />
+                                <Button n1:id="@id/route_type_dir_button9" style="@style/mySupportButton" />
+                            </LinearLayout>
+                        </com.neighbor.ulsanbus.util.ExtendedHorizontalScrollView>
+                        <ImageView n1:id="@id/direction_next" n1:background="@drawable/btn_next" n1:layout_width="20.0dip" n1:layout_height="fill_parent" n1:layout_marginLeft="3.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout n1:orientation="vertical" n1:id="@id/recycler_group" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="11.659973dip" n1:layout_marginBottom="3.0dip">
+                        <Button n1:textSize="14.0dip" n1:id="@id/route_type_recycle_button0" n1:background="@drawable/btn_com_empty" n1:paddingTop="8.0dip" n1:paddingBottom="8.0dip" n1:layout_width="0.0dip" n1:layout_height="68.0dip" n1:layout_marginRight="2.0dip" n1:layout_weight="0.5" />
+                        <LinearLayout n1:orientation="vertical" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="0.5">
+                            <Button n1:textSize="14.0dip" n1:id="@id/route_type_recycle_button1" n1:background="@drawable/btn_com_empty" n1:paddingTop="8.0dip" n1:paddingBottom="8.0dip" n1:layout_width="fill_parent" n1:layout_height="33.0dip" n1:layout_marginBottom="2.0dip" />
+                            <Button n1:textSize="14.0dip" n1:id="@id/route_type_recycle_button2" n1:background="@drawable/btn_com_empty" n1:paddingTop="8.0dip" n1:paddingBottom="8.0dip" n1:layout_width="fill_parent" n1:layout_height="33.0dip" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="11.659973dip" n1:layout_marginBottom="3.0dip">
+                        <ImageView n1:id="@id/recycler_prev" n1:background="@drawable/btn_prev" n1:layout_width="20.0dip" n1:layout_height="fill_parent" n1:layout_marginRight="3.0dip" />
+                        <com.neighbor.ulsanbus.util.ExtendedHorizontalScrollView n1:gravity="center" n1:orientation="horizontal" n1:id="@id/recycler_scroller" n1:scrollbars="none" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="0.9">
+                            <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+                                <Button n1:id="@id/route_type_recycle_button3" style="@style/mySupportButton" />
+                                <Button n1:id="@id/route_type_recycle_button4" style="@style/mySupportButton" />
+                                <Button n1:id="@id/route_type_recycle_button5" style="@style/mySupportButton" />
+                                <Button n1:id="@id/route_type_recycle_button6" style="@style/mySupportButton" />
+                                <Button n1:id="@id/route_type_recycle_button7" style="@style/mySupportButton" />
+                                <Button n1:id="@id/route_type_recycle_button8" style="@style/mySupportButton" />
+                            </LinearLayout>
+                        </com.neighbor.ulsanbus.util.ExtendedHorizontalScrollView>
+                        <ImageView n1:id="@id/recycler_next" n1:background="@drawable/btn_next" n1:layout_width="20.0dip" n1:layout_height="fill_parent" n1:layout_marginLeft="3.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView n1:textSize="18.0dip" n1:textColor="#ff000000" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="1.5999756dip" n1:text="@string/route_information_station_interval" />
+                <TextView n1:textSize="18.0dip" n1:textColor="#ff000000" n1:id="@id/route_info_section" n1:background="@drawable/route_rect_border" n1:paddingLeft="8.659973dip" n1:paddingTop="8.0dip" n1:paddingBottom="8.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="3.3299866dip" />
+                <TextView n1:textSize="18.0dip" n1:textStyle="bold" n1:textColor="#ff000000" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="3.0dip" n1:text="@string/route_information_station_time" />
+                <RelativeLayout n1:background="@drawable/route_rect_border" n1:paddingBottom="6.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="3.3299866dip" n1:layout_marginBottom="3.3299866dip">
+                    <TextView n1:textSize="18.0dip" n1:textStyle="bold" n1:textColor="#ff000000" n1:id="@id/today_business_time_working_index" n1:paddingLeft="8.659973dip" n1:paddingTop="8.659973dip" n1:paddingBottom="6.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip" n1:text="@string/route_information_station_time_weekdays" />
+                    <Button n1:id="@id/btn_business_time_working" n1:background="@drawable/btn_route_list" n1:layout_width="26.333313dip" n1:layout_height="28.0dip" n1:layout_marginLeft="9.0dip" n1:layout_marginTop="10.0dip" n1:layout_marginRight="10.0dip" n1:layout_alignParentRight="true" />
+                    <TextView n1:textSize="18.0dip" n1:textColor="#ff000000" n1:id="@id/today_business_time_working" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="18.0dip" n1:layout_marginRight="7.3299866dip" n1:layout_toLeftOf="@id/btn_business_time_working" />
+                    <TextView n1:textSize="18.0dip" n1:textStyle="bold" n1:textColor="#ff000000" n1:id="@id/today_business_time_semi_index" n1:paddingLeft="8.659973dip" n1:paddingTop="6.659973dip" n1:paddingBottom="3.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="3.3299866dip" n1:text="@string/route_information_station_time_semi_holiday" n1:layout_below="@id/today_business_time_working_index" />
+                    <Button n1:id="@id/btn_business_time_semi" n1:background="@drawable/btn_route_list" n1:layout_width="26.333313dip" n1:layout_height="28.0dip" n1:layout_marginLeft="9.0dip" n1:layout_marginTop="15.0dip" n1:layout_marginRight="10.0dip" n1:layout_below="@id/btn_business_time_working" n1:layout_alignParentRight="true" />
+                    <TextView n1:textSize="18.0dip" n1:textColor="#ff000000" n1:id="@id/today_business_time_semi" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="13.0dip" n1:layout_marginRight="7.3299866dip" n1:layout_toLeftOf="@id/btn_business_time_semi" n1:layout_below="@id/today_business_time_working" />
+                    <TextView n1:textSize="18.0dip" n1:textStyle="bold" n1:textColor="#ff000000" n1:id="@id/today_business_time_holiday_index" n1:paddingLeft="8.659973dip" n1:paddingTop="8.0dip" n1:paddingBottom="6.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="6.0dip" n1:text="@string/route_information_station_time_holidays" n1:layout_below="@id/today_business_time_semi_index" />
+                    <Button n1:id="@id/btn_business_time_holiday" n1:background="@drawable/btn_route_list" n1:layout_width="26.333313dip" n1:layout_height="28.0dip" n1:layout_marginLeft="9.0dip" n1:layout_marginTop="20.0dip" n1:layout_marginRight="10.0dip" n1:layout_marginBottom="3.3299866dip" n1:layout_below="@id/btn_business_time_semi" n1:layout_alignParentRight="true" />
+                    <TextView n1:textSize="18.0dip" n1:textColor="#ff000000" n1:id="@id/today_business_time_holiday" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="18.0dip" n1:layout_marginRight="7.3299866dip" n1:layout_toLeftOf="@id/btn_business_time_holiday" n1:layout_below="@id/today_business_time_semi" />
+                    <TextView n1:textSize="18.0dip" n1:textColor="#ff000000" n1:id="@id/today_business_time_notice" n1:paddingLeft="8.659973dip" n1:paddingTop="0.6700001dip" n1:paddingBottom="8.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="3.3299866dip" n1:layout_below="@id/today_business_time_holiday_index" />
+                </RelativeLayout>
+                <TextView n1:textSize="18.0dip" n1:textStyle="bold" n1:textColor="#ff000000" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="3.2999878dip" n1:text="@string/route_information_allocation_interval" />
+                <RelativeLayout n1:background="@drawable/route_rect_border" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="3.3299866dip">
+                    <TextView n1:textSize="18.0dip" n1:textStyle="bold" n1:textColor="#ff000000" n1:id="@id/today_business_inteval_index" n1:paddingLeft="8.659973dip" n1:paddingTop="3.0dip" n1:paddingBottom="6.6999817dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="3.3299866dip" n1:text="@string/route_information_allocation_today_interval" />
+                    <TextView n1:textSize="18.0dip" n1:textColor="#ff000000" n1:id="@id/today_business_inteval" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="3.0dip" n1:layout_marginRight="7.3299866dip" n1:layout_alignParentRight="true" />
+                    <TextView n1:textSize="18.0dip" n1:textColor="#ff000000" n1:id="@id/today_business_inteval_notice" n1:paddingLeft="8.659973dip" n1:paddingTop="0.6700001dip" n1:paddingBottom="8.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="3.3299866dip" n1:text="@string/route_information_notice_coment_text2" n1:layout_below="@id/today_business_inteval_index" />
+                </RelativeLayout>
+                <TextView n1:textSize="18.0dip" n1:textStyle="bold" n1:textColor="#ff000000" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="6.0dip" n1:layout_marginRight="17.21997dip" n1:text="@string/route_information_transportation_company" />
+                <RelativeLayout n1:background="@drawable/route_rect_border" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="3.3299866dip" n1:layout_marginBottom="10.0dip">
+                    <TextView n1:textSize="18.0dip" n1:textColor="#ff000000" n1:id="@id/route_company_name" n1:paddingLeft="8.659973dip" n1:paddingTop="3.0dip" n1:paddingBottom="8.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="3.3299866dip" />
+                    <TextView n1:textSize="18.0dip" n1:textColor="#ff000000" n1:id="@id/route_company_tel" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="3.0dip" n1:layout_marginRight="7.3299866dip" n1:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

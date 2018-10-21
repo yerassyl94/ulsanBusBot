@@ -13,7 +13,7 @@ module.exports = {
                 let data = JSON.parse(body);
                 let rows = data.rows;
                 console.log('1');
-                rows.map(function (row) {
+                rows.versionMap(function (row) {
                     return new Promise(function (resolve) {
                         let getReplies = getArrivalInfo.getArrivalInfo(row.brtNo, row.brtDirection, row.bnodeId, row.brtClass);
                         resolve(getReplies);

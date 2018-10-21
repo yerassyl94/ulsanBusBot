@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/widget1" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/widget1_background" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:scaleType="fitXY" />
+    <TextView n1:textSize="10.0dip" n1:textStyle="bold" n1:textColor="#ffffffff" n1:ellipsize="end" n1:id="@id/widget1_stop_name" n1:paddingLeft="5.3299866dip" n1:paddingRight="5.3299866dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="5.3299866dip" n1:layout_marginTop="13.0dip" n1:singleLine="true" n1:layout_centerHorizontal="true" />
+    <TextView n1:textSize="14.0dip" n1:textStyle="bold" n1:textColor="#ffffa100" n1:id="@id/widget1_route_number" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="5.3299866dip" n1:layout_marginTop="8.0dip" n1:layout_below="@id/widget1_stop_name" n1:layout_centerHorizontal="true" />
+    <TextView n1:textSize="11.0dip" n1:textStyle="bold" n1:textColor="#ff242424" n1:id="@id/widget1_remain_time" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="5.3299866dip" n1:layout_marginTop="2.0dip" n1:layout_below="@id/widget1_route_number" n1:layout_centerHorizontal="true" />
+    <ProgressBar n1:id="@id/widget1_progress" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="20.0dip" n1:layout_alignParentBottom="true" n1:layout_centerHorizontal="true" />
+</RelativeLayout>

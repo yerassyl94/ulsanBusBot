@@ -16,11 +16,11 @@ function convert(bus) {
 
 function parseAndConvert(body) {
   const parsed = JSON.parse(body);
-  return parsed.rows.map(convert);
+  return parsed.rows.versionMap(convert);
 }
 
 function getKorean(data) {
-  return data.map(e => e.name_kr);
+  return data.versionMap(e => e.name_kr);
 }
 
 function fillEnglish(data, english) {

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:id="@id/routeshow_bus_stop_row" n1:background="@drawable/list_selector" n1:layout_width="fill_parent" n1:layout_height="34.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="fill_parent">
+        <ImageView n1:id="@id/routeshow_bus_stop_limusine" n1:layout_width="18.659973dip" n1:layout_height="18.659973dip" n1:layout_marginLeft="3.3299866dip" n1:layout_marginTop="6.0dip" n1:scaleType="center" />
+        <LinearLayout n1:orientation="vertical" n1:id="@id/routeshow_bus_text_layout" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+            <TextView n1:textSize="11.333313dip" n1:textStyle="bold" n1:textColor="#ff000000" n1:id="@id/routeshow_bus_stop_item_name" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="3.3299866dip" n1:layout_marginTop="6.0dip" />
+            <TextView n1:textSize="11.333313dip" n1:textStyle="bold" n1:textColor="#ff555555" n1:id="@id/routeshow_bus_stop_item_id" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="3.3299866dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView n1:layout_gravity="bottom|center|right" n1:id="@id/routeshow_stop_line_start" n1:layout_width="wrap_content" n1:layout_height="30.0dip" n1:layout_marginRight="54.0dip" n1:scaleType="fitXY" style="@style/route_stop_start" />
+    <ImageView n1:layout_gravity="right" n1:id="@id/routeshow_stop_line_mid" n1:layout_width="wrap_content" n1:layout_height="34.0dip" n1:layout_marginRight="54.0dip" n1:scaleType="fitXY" style="@style/route_stop_mid" />
+    <ImageView n1:layout_gravity="right" n1:id="@id/routeshow_stop_line_end" n1:layout_width="wrap_content" n1:layout_height="30.0dip" n1:layout_marginRight="54.0dip" n1:scaleType="fitXY" style="@style/route_stop_end" />
+    <ImageView n1:layout_gravity="center|right" n1:id="@id/routeshow_waypoint" n1:visibility="gone" n1:layout_width="20.0dip" n1:layout_height="20.0dip" n1:layout_marginRight="51.0dip" n1:src="@drawable/icon_return" n1:scaleType="fitXY" />
+    <LinearLayout n1:layout_gravity="center|right" n1:orientation="horizontal" n1:id="@id/routeshow_bus_info" n1:visibility="visible" n1:layout_width="45.0dip" n1:layout_height="wrap_content" n1:layout_marginRight="8.0dip">
+        <ImageView n1:id="@id/routeshow_bus_location" n1:layout_width="18.0dip" n1:layout_height="18.0dip" n1:src="@drawable/icon_current_location" n1:scaleType="fitXY" />
+        <TextView n1:textSize="8.0dip" n1:textStyle="bold" n1:textColor="#ff797b7b" n1:layout_gravity="center" n1:id="@id/routeshow_bus_no" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <net.daum.mf.map.api.MapView android:id="@+id/map" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/linearLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@+id/map" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <Button android:textSize="12sp" android:textStyle="bold" android:id="@+id/btn_tcard_map" android:background="@drawable/btn_com_empty" android:padding="6.666dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.66dp" android:layout_marginBottom="6.66dp" android:text="@string/map_tcardstore"/>
+        <Button android:textSize="12dp" android:textStyle="bold" android:id="@+id/btn_mypos" android:background="@drawable/btn_com_empty" android:padding="6.666dp" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginBottom="6.66dp" android:text="내 위치"/>
+    </LinearLayout>
+</RelativeLayout>

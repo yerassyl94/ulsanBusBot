@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/arrival_stop_background" android:background="#77add1" android:paddingLeft="6.66dp" android:layout_width="match_parent" android:layout_height="38.97dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="#ffffff" android:id="@+id/arrival_stop_name" android:paddingTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="11dp" android:textStyle="bold" android:textColor="#dce8f2" android:id="@+id/arrival_stop_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.56dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="6.6dp">
+                <Button android:id="@+id/arrival_time_add_favorite" android:background="@drawable/btn_com_favorite" android:layout_width="29.6667dp" android:layout_height="29dp" android:layout_marginTop="4.333dp" android:layout_marginBottom="1.32dp"/>
+                <Button android:linksClickable="true" android:id="@+id/icon_refresh_stop_infomation" android:background="@drawable/btn_com_refresh" android:layout_width="29.6667dp" android:layout_height="29dp" android:layout_marginLeft="2.22dp" android:layout_marginTop="4.333dp" android:layout_marginBottom="1.32dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/arrival_background" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                <RelativeLayout android:id="@+id/arrival_bus_info" android:paddingLeft="6.66dp" android:paddingBottom="7.26dp" android:layout_width="match_parent" android:layout_height="33.66dp" android:layout_marginLeft="6.66dp" android:layout_marginTop="7.88dp" android:layout_marginRight="6.66dp">
+                    <ImageView android:id="@+id/image_bus_type" android:layout_width="21.3333dp" android:layout_height="21.3333dp" android:layout_marginTop="6.66dp" android:src="@drawable/icon_bus" android:scaleType="fitXY"/>
+                    <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="#ffffff" android:id="@+id/bus_type_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.66dp" android:layout_marginTop="6.66dp" android:layout_toRightOf="@+id/image_bus_type"/>
+                    <TextView android:textSize="19.33dp" android:textStyle="bold" android:textColor="#ffffff" android:id="@+id/comming_bus_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.66dp" android:layout_marginTop="4.66dp" android:layout_toRightOf="@+id/bus_type_text"/>
+                    <TextView android:textSize="10.33dp" android:textStyle="bold" android:textColor="#ffffff" android:ellipsize="end" android:id="@+id/bus_destination_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="6.6dp" android:maxLines="1" android:layout_toRightOf="@+id/comming_bus_number" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+                <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23.76dp">
+                    <include android:id="@+id/arrival_bus_no1" layout="@layout/arrival_time_item"/>
+                    <include android:id="@+id/arrival_bus_no2" layout="@layout/arrival_time_item"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23.76dp" android:layout_marginBottom="10dp">
+                    <include android:id="@+id/arrival_bus_no3" layout="@layout/arrival_time_item"/>
+                    <include android:id="@+id/arrival_bus_no4" layout="@layout/arrival_time_item"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@+id/arrival_bus_progress" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</FrameLayout>

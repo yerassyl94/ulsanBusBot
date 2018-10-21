@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/information_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/background_nomal" android:scaleType="fitXY"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="4.66dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@+id/information_notice_button" android:background="@drawable/tab_info_notice" android:layout_width="66.66dp" android:layout_height="35.66dp"/>
+            <Button android:id="@+id/information_verinfor_button" android:background="@drawable/tab_info_version" android:layout_width="66.66dp" android:layout_height="35.66dp"/>
+            <Button android:id="@+id/information_emergency_button" android:background="@drawable/tab_info_emergen" android:layout_width="66.66dp" android:layout_height="35.66dp"/>
+            <Button android:id="@+id/information_manual_button" android:background="@drawable/tab_info_manual" android:layout_width="66.66dp" android:layout_height="35.66dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/information_dynamic_layout" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="6dp" android:layout_weight="1"/>
+    </LinearLayout>
+</FrameLayout>

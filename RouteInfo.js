@@ -34,7 +34,7 @@ function convert(bus) {
 }
 
 function parse(data) {
-  return JSON.parse(data).rows.map(convert);
+  return JSON.parse(data).rows.versionMap(convert);
 }
 
 function onSuccess(body) {

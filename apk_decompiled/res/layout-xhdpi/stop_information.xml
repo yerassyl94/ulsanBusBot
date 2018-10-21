@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/stop_bgimage" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:scaleType="fitXY" />
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <RelativeLayout n1:id="@id/stop_information_background_layout" n1:background="#ff77add1" n1:paddingLeft="6.659973dip" n1:layout_width="fill_parent" n1:layout_height="38.97dip">
+            <TextView n1:textSize="12.0dip" n1:textStyle="bold" n1:textColor="#ffffffff" n1:id="@id/stop_info_stop_name" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="4.659973dip" />
+            <TextView n1:textSize="11.0dip" n1:textStyle="bold" n1:textColor="#ffdce8f2" n1:id="@id/stop_info_stop_id" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="4.659973dip" n1:layout_below="@id/stop_info_stop_name" />
+            <Button n1:id="@id/icon_arriva_mode" n1:background="@drawable/btn_icon_switch_bus" n1:layout_width="29.666656dip" n1:layout_height="30.299988dip" n1:layout_marginTop="4.5999756dip" n1:layout_marginRight="6.659973dip" n1:layout_marginBottom="3.3299866dip" n1:layout_alignParentRight="true" />
+            <Button n1:id="@id/icon_refresh_stop_infomation" n1:background="@drawable/btn_com_refresh" n1:layout_width="29.666656dip" n1:layout_height="30.299988dip" n1:layout_marginTop="4.5999756dip" n1:layout_marginRight="6.659973dip" n1:layout_marginBottom="3.3299866dip" n1:layout_toLeftOf="@id/icon_arriva_mode" />
+            <Button n1:id="@id/stop_info_map" n1:background="@drawable/btn_com_map" n1:layout_width="29.666656dip" n1:layout_height="30.299988dip" n1:layout_marginTop="4.5999756dip" n1:layout_marginRight="4.0dip" n1:layout_marginBottom="3.3299866dip" n1:layout_toLeftOf="@id/icon_refresh_stop_infomation" />
+            <Button n1:id="@id/arrival_time_add_favorite" n1:background="@drawable/btn_com_favorite" n1:layout_width="29.666656dip" n1:layout_height="30.299988dip" n1:layout_marginTop="4.5999756dip" n1:layout_marginRight="4.659973dip" n1:layout_marginBottom="3.3299866dip" n1:layout_toLeftOf="@id/stop_info_map" />
+        </RelativeLayout>
+        <LinearLayout n1:gravity="center_horizontal" n1:orientation="horizontal" n1:paddingTop="16.659973dip" n1:paddingBottom="6.5999756dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <Button n1:id="@id/transfer_start_add" n1:background="@drawable/btn_start_stop_normal" n1:layout_width="73.66dip" n1:layout_height="28.659973dip" />
+            <Button n1:id="@id/transfer_end_add" n1:background="@drawable/btn_end_stop_normal" n1:layout_width="73.66dip" n1:layout_height="28.659973dip" n1:layout_marginLeft="3.3299866dip" />
+        </LinearLayout>
+        <FrameLayout n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_marginBottom="7.0dip" n1:layout_weight="1.0">
+            <ListView n1:layout_gravity="center_horizontal" n1:id="@id/stop_information_list" n1:background="@drawable/list_border" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.655975dip" n1:layout_marginRight="10.655975dip" n1:layout_marginBottom="6.659973dip" n1:drawSelectorOnTop="false" n1:scrollingCache="false" n1:divider="#ff9abbd1" n1:dividerHeight="0.6dip" n1:fastScrollEnabled="true" />
+            <ProgressBar n1:layout_gravity="center" n1:id="@id/stop_information_progress" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

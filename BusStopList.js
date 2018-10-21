@@ -14,7 +14,7 @@ function convert(bus) {
 }
 
 function parse(data) {
-  return JSON.parse(data).rows.map(convert);
+  return JSON.parse(data).rows.versionMap(convert);
 }
 
 function onSuccess(body, filter) {
@@ -81,7 +81,7 @@ module.exports.findCloserThan = function (location, distance) {
 
 //module.exports.findByName('LG').then(console.log);
 
-/*module.exports.findClosestN({
+module.exports.findClosestN({
   latitude: 35.5715542,
   longitude: 129.1893059,
-}, 5).then(console.log);*/
+}, 5).then(console.log);

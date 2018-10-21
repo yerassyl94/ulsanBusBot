@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <LinearLayout n1:orientation="horizontal" n1:id="@id/transdetail_background" n1:paddingLeft="12.659973dip" n1:paddingTop="12.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <TextView n1:textSize="11.333313dip" n1:textStyle="bold" n1:textColor="#ff000000" n1:id="@id/transdetail_departure_stop" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+        <ImageView n1:id="@id/transfer_start_arrow" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="2.6599731dip" n1:src="@drawable/arrow" />
+        <TextView n1:textSize="10.0dip" n1:textStyle="bold" n1:textColor="#ff000000" n1:id="@id/transdetail_destination_stop" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout n2:orientation="horizontal" n2:paddingLeft="12.659973dip" n2:layout_width="fill_parent" n2:layout_height="wrap_content" n2:layout_marginTop="8.0dip"
+      xmlns:n2="http://schemas.android.com/apk/res/android">
+        <TextView n2:textSize="10.0dip" n2:textStyle="bold" n2:textColor="#ffe2473f" n2:id="@id/transdetail_take_time" n2:layout_width="wrap_content" n2:layout_height="wrap_content" />
+        <ImageView n2:layout_width="2.0dip" n2:layout_height="10.0dip" n2:layout_marginLeft="3.3299866dip" n2:src="@drawable/transdetail_stop_seperator" n2:scaleType="fitXY" />
+        <TextView n2:textSize="10.0dip" n2:textStyle="bold" n2:textColor="#ff555555" n2:id="@id/transdetail_translation_info" n2:layout_width="wrap_content" n2:layout_height="wrap_content" n2:layout_marginLeft="3.3299866dip" />
+    </LinearLayout>
+    <ProgressBar n3:layout_gravity="center" n3:id="@id/transdetail_update_progress" n3:layout_width="wrap_content" n3:layout_height="wrap_content"
+      xmlns:n3="http://schemas.android.com/apk/res/android" />
+    <RelativeLayout n4:id="@id/transdetail_update_layout" n4:background="@drawable/list_header" n4:visibility="gone" n4:layout_width="fill_parent" n4:layout_height="22.659973dip" n4:layout_marginLeft="6.659973dip" n4:layout_marginTop="6.659973dip" n4:layout_marginRight="6.659973dip"
+      xmlns:n4="http://schemas.android.com/apk/res/android">
+        <ImageView n4:id="@id/transdetail_time_icon" n4:layout_width="wrap_content" n4:layout_height="wrap_content" n4:layout_marginLeft="6.0dip" n4:layout_marginTop="6.5999756dip" n4:src="@drawable/icon_time" />
+        <TextView n4:textSize="8.0dip" n4:textStyle="bold" n4:textColor="#ff000000" n4:id="@id/transdetail_update_text" n4:layout_width="wrap_content" n4:layout_height="wrap_content" n4:layout_marginLeft="2.0dip" n4:layout_marginTop="6.5999756dip" n4:layout_toRightOf="@id/transdetail_time_icon" />
+        <Button n4:id="@id/btn_transdetail_update" n4:background="@drawable/btn_icon_refresh" n4:layout_width="wrap_content" n4:layout_height="wrap_content" n4:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout n5:id="@id/transdetail_first_row" n5:background="@color/list_row_color" n5:paddingBottom="5.3299866dip" n5:layout_width="fill_parent" n5:layout_height="wrap_content" n5:layout_marginLeft="6.659973dip" n5:layout_marginRight="6.659973dip" n5:layout_marginBottom="0.6dip"
+      xmlns:n5="http://schemas.android.com/apk/res/android">
+        <ImageView n5:id="@id/transferdetail_begin_icon" n5:layout_width="wrap_content" n5:layout_height="wrap_content" n5:layout_marginLeft="6.0dip" n5:layout_marginTop="6.0dip" n5:layout_marginBottom="5.3299866dip" n5:src="@drawable/icon_transfer_start_stop" n5:scaleType="center" />
+        <TextView n5:textSize="10.0dip" n5:textStyle="bold" n5:textColor="#ff000000" n5:id="@id/transdetail_begin_text" n5:layout_width="wrap_content" n5:layout_height="wrap_content" n5:layout_marginLeft="3.3299866dip" n5:layout_marginTop="10.329987dip" n5:layout_toRightOf="@id/transferdetail_begin_icon" />
+    </RelativeLayout>
+    <ListView n6:id="@id/transdetail_route_list" n6:background="@drawable/list_border" n6:layout_width="fill_parent" n6:layout_height="wrap_content" n6:layout_marginLeft="6.659973dip" n6:layout_marginRight="6.659973dip" n6:scrollingCache="false" n6:divider="@color/list_divider_color" n6:dividerHeight="0.6dip" n6:fastScrollEnabled="true"
+      xmlns:n6="http://schemas.android.com/apk/res/android" />
+    <RelativeLayout n7:id="@id/transdetail_last_row" n7:background="@color/list_row_color" n7:paddingBottom="7.3299866dip" n7:layout_width="fill_parent" n7:layout_height="wrap_content" n7:layout_marginLeft="6.659973dip" n7:layout_marginTop="0.6dip" n7:layout_marginRight="6.659973dip"
+      xmlns:n7="http://schemas.android.com/apk/res/android">
+        <ImageView n7:id="@id/transferdetail_end_icon" n7:layout_width="wrap_content" n7:layout_height="wrap_content" n7:layout_marginLeft="6.0dip" n7:layout_marginTop="6.0dip" n7:layout_marginBottom="5.3299866dip" n7:src="@drawable/icon_transfer_end_stop" n7:scaleType="center" />
+        <TextView n7:textSize="10.0dip" n7:textStyle="bold" n7:textColor="#ff000000" n7:id="@id/transdetail_end_text" n7:layout_width="wrap_content" n7:layout_height="wrap_content" n7:layout_marginLeft="3.3299866dip" n7:layout_marginTop="10.329987dip" n7:layout_toRightOf="@id/transferdetail_end_icon" />
+    </RelativeLayout>
+</merge>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/route_timetable_row" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/time_hour_layout" android:layout_width="80dp" android:layout_height="wrap_content">
+        <TextView android:textSize="16dp" android:textStyle="bold" android:id="@+id/am_time_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.3sp" android:layout_marginTop="6.6sp" android:text="@string/route_timetable_am" style="@style/am_text_style"/>
+        <TextView android:textSize="16dp" android:textStyle="bold" android:id="@+id/pm_time_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.3sp" android:layout_marginTop="6.6sp" android:text="@string/route_timetable_pm" style="@style/pm_text_style"/>
+        <TextView android:textSize="16dp" android:textStyle="bold" android:id="@+id/am_time_hour" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.3sp" android:layout_marginTop="6.6sp" style="@style/am_text_style"/>
+        <TextView android:textSize="16dp" android:textStyle="bold" android:id="@+id/pm_time_hour" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.3sp" android:layout_marginTop="6.6sp" style="@style/pm_text_style"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/time_min_layout" android:paddingTop="6.66dp" android:paddingBottom="6.66dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.66dp" android:layout_toRightOf="@+id/time_hour_layout"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/time_remark_layout" android:paddingTop="6.66dp" android:paddingBottom="6.66dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.66dp" android:layout_toRightOf="@+id/time_min_layout"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.6sp" android:layout_alignParentRight="true">
+        <TextView android:textSize="17.3333dp" android:textStyle="bold" android:id="@+id/time_state_txt" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.66sp" android:layout_marginRight="6.66dp"/>
+        <ImageView android:id="@+id/img_schedule" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.66sp"/>
+    </LinearLayout>
+</RelativeLayout>

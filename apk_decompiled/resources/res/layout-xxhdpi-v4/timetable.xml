@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/route_timetable_layout" android:paddingLeft="6.66dp" android:layout_width="match_parent" android:layout_height="38.97dp">
+        <ImageView android:id="@+id/route_timetable_bus_img" android:layout_width="21.3333dp" android:layout_height="21.3333dp" android:layout_marginTop="8.32dp" android:src="@drawable/icon_bus" android:scaleType="fitXY"/>
+        <TextView android:textSize="18.66dp" android:textStyle="bold" android:textColor="#ffffff" android:id="@+id/route_timetable_route_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.66dp" android:layout_marginTop="6.66dp" android:layout_toRightOf="@+id/route_timetable_bus_img"/>
+        <TextView android:textSize="18.66dp" android:textStyle="bold" android:textColor="#ffffff" android:id="@+id/route_timetable_stop_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.66dp" android:layout_marginTop="6.66dp" android:layout_toRightOf="@+id/route_timetable_route_type"/>
+        <TextView android:textSize="14.52sp" android:textStyle="bold" android:textColor="#ffffff" android:id="@+id/route_timetable_stop_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.66dp" android:layout_marginTop="6.66dp" android:layout_toRightOf="@+id/route_timetable_stop_number"/>
+    </RelativeLayout>
+    <FrameLayout android:orientation="vertical" android:id="@+id/route_timetable_background" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <ListView android:layout_gravity="center_horizontal" android:id="@+id/route_timetable_list" android:background="@drawable/list_border" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="6.66dp" android:scrollingCache="false" android:divider="@color/list_divider_color" android:dividerHeight="0.6dp" android:fastScrollEnabled="true"/>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/route_timetable_progress" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/departure_layout" android:paddingLeft="6.66dp" android:paddingTop="4dp" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <AutoCompleteTextView android:textSize="13dp" android:id="@+id/transfer_start_edittext" android:background="@drawable/input_background" android:paddingLeft="9.99dp" android:paddingTop="6dp" android:paddingBottom="6.66dp" android:layout_width="0dp" android:layout_height="32.666dp" android:hint="@string/transfer_start_input_text" android:singleLine="true" android:layout_weight="0.7"/>
+        <Button android:id="@+id/btn_transfer_start" android:background="@drawable/btn_icon_search" android:layout_width="29.6667dp" android:layout_height="32.666dp" android:layout_marginLeft="4.6dp"/>
+        <Button android:id="@+id/btn_transfer_start_map" android:background="@drawable/map_btn_selector" android:layout_width="29.6667dp" android:layout_height="32dp" android:layout_marginLeft="4.6dp" android:layout_marginRight="10dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/destination_layout" android:paddingLeft="6.66dp" android:paddingTop="3.33dp" android:paddingBottom="3.3dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <AutoCompleteTextView android:textSize="13dp" android:id="@+id/transfer_dest_edittext" android:background="@drawable/input_background" android:paddingLeft="9.99dp" android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_width="0dp" android:layout_height="32dp" android:hint="@string/transfer_end_input_text" android:singleLine="true" android:layout_weight="0.7"/>
+        <Button android:id="@+id/btn_transfer_dest_search" android:background="@drawable/btn_icon_search" android:layout_width="29.6667dp" android:layout_height="32dp" android:layout_marginLeft="4.6dp"/>
+        <Button android:id="@+id/btn_transfer_dest_map" android:background="@drawable/map_btn_selector" android:layout_width="29.6667dp" android:layout_height="32dp" android:layout_marginLeft="4.6dp" android:layout_marginRight="10dp"/>
+    </LinearLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@+id/content_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:id="@+id/btn_transfer_route_search" android:background="@drawable/btn_search" android:layout_width="80dp" android:layout_height="29dp" android:layout_marginLeft="11.33dp" android:layout_marginTop="9.99dp"/>
+            </LinearLayout>
+            <ProgressBar android:layout_gravity="center_horizontal" android:id="@+id/transfer_route_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="70dp"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/transfer_list_layout" android:paddingLeft="6.66dp" android:paddingRight="6.66dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18.66dp">
+                <LinearLayout android:orientation="vertical" android:id="@+id/direct_route_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="12.66dp" android:textStyle="bold" android:textColor="#000000" android:paddingLeft="6.66dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18.66dp" android:text="@string/transfer_dir_result_title"/>
+                    <ListView android:id="@+id/direct_route_list" android:background="@drawable/list_border" android:layout_width="match_parent" android:layout_height="182dp" android:layout_marginTop="1.33dp" android:scrollingCache="false" android:divider="@color/list_divider_color" android:dividerHeight="0.6dp" android:fastScrollEnabled="true"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/transfer_route_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+                    <TextView android:textSize="12.66dp" android:textStyle="bold" android:textColor="#000000" android:paddingLeft="6.66dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18.66dp" android:text="@string/transfer_trans_result_title"/>
+                    <ListView android:id="@+id/transfer_route_list" android:background="@drawable/list_border" android:layout_width="match_parent" android:layout_height="182dp" android:layout_marginTop="1.33dp" android:scrollingCache="false" android:divider="@color/list_divider_color" android:dividerHeight="0.6dp" android:fastScrollEnabled="true"/>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+</LinearLayout>

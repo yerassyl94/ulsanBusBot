@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/transdetail_background" android:paddingLeft="12.66dp" android:paddingTop="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="11.3333dp" android:textStyle="bold" android:textColor="#000000" android:id="@+id/transdetail_departure_stop" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <ImageView android:id="@+id/transfer_start_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.66dp" android:src="@drawable/arrow"/>
+        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="#000000" android:id="@+id/transdetail_destination_stop" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="12.66dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="#e2473f" android:id="@+id/transdetail_take_time" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <ImageView android:layout_width="2dp" android:layout_height="10dp" android:layout_marginLeft="3.33dp" android:src="@drawable/transdetail_stop_seperator" android:scaleType="fitXY"/>
+        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="#555555" android:id="@+id/transdetail_translation_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.33dp"/>
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@+id/transdetail_update_progress" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <RelativeLayout android:id="@+id/transdetail_update_layout" android:background="@drawable/list_header" android:visibility="gone" android:layout_width="match_parent" android:layout_height="22.66dp" android:layout_marginLeft="6.66dp" android:layout_marginTop="6.66dp" android:layout_marginRight="6.66dp">
+        <ImageView android:id="@+id/transdetail_time_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginTop="6.6dp" android:src="@drawable/icon_time"/>
+        <TextView android:textSize="8dp" android:textStyle="bold" android:textColor="#000000" android:id="@+id/transdetail_update_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:layout_marginTop="6.6dp" android:layout_toRightOf="@+id/transdetail_time_icon"/>
+        <Button android:id="@+id/btn_transdetail_update" android:background="@drawable/btn_icon_refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/transdetail_first_row" android:background="@color/list_row_color" android:paddingBottom="5.33dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.66dp" android:layout_marginRight="6.66dp" android:layout_marginBottom="0.6dp">
+        <ImageView android:id="@+id/transferdetail_begin_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginTop="6dp" android:layout_marginBottom="5.33dp" android:src="@drawable/icon_transfer_start_stop" android:scaleType="center"/>
+        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="#000000" android:id="@+id/transdetail_begin_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.33dp" android:layout_marginTop="10.33dp" android:layout_toRightOf="@+id/transferdetail_begin_icon"/>
+    </RelativeLayout>
+    <ListView android:id="@+id/transdetail_route_list" android:background="@drawable/list_border" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.66dp" android:layout_marginRight="6.66dp" android:scrollingCache="false" android:divider="@color/list_divider_color" android:dividerHeight="0.6dp" android:fastScrollEnabled="true"/>
+    <RelativeLayout android:id="@+id/transdetail_last_row" android:background="@color/list_row_color" android:paddingBottom="7.33dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.66dp" android:layout_marginTop="0.6dp" android:layout_marginRight="6.66dp">
+        <ImageView android:id="@+id/transferdetail_end_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginTop="6dp" android:layout_marginBottom="5.33dp" android:src="@drawable/icon_transfer_end_stop" android:scaleType="center"/>
+        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="#000000" android:id="@+id/transdetail_end_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.33dp" android:layout_marginTop="10.33dp" android:layout_toRightOf="@+id/transferdetail_end_icon"/>
+    </RelativeLayout>
+</merge>

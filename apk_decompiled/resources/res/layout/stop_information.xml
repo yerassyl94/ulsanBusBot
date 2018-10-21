@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/stop_information_background_layout" android:background="#77add1" android:paddingLeft="6.66dp" android:layout_width="match_parent" android:layout_height="38.97dp">
+            <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="#ffffff" android:id="@+id/stop_info_stop_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.66dp"/>
+            <TextView android:textSize="11dp" android:textStyle="bold" android:textColor="#dce8f2" android:id="@+id/stop_info_stop_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.66dp" android:layout_below="@+id/stop_info_stop_name"/>
+            <Button android:id="@+id/icon_arriva_mode" android:background="@drawable/btn_icon_switch_bus" android:layout_width="29.6667dp" android:layout_height="30.3dp" android:layout_marginTop="4.6dp" android:layout_marginRight="6.66dp" android:layout_marginBottom="3.33dp" android:layout_alignParentRight="true"/>
+            <Button android:id="@+id/icon_refresh_stop_infomation" android:background="@drawable/btn_com_refresh" android:layout_width="29.6667dp" android:layout_height="30.3dp" android:layout_marginTop="4.6dp" android:layout_marginRight="6.66dp" android:layout_marginBottom="3.33dp" android:layout_toLeftOf="@+id/icon_arriva_mode"/>
+            <Button android:id="@+id/stop_info_map" android:background="@drawable/btn_com_map" android:layout_width="29.6667dp" android:layout_height="30.3dp" android:layout_marginTop="4.6dp" android:layout_marginRight="4dp" android:layout_marginBottom="3.33dp" android:layout_toLeftOf="@+id/icon_refresh_stop_infomation"/>
+            <Button android:id="@+id/arrival_time_add_favorite" android:background="@drawable/btn_com_favorite" android:layout_width="29.6667dp" android:layout_height="30.3dp" android:layout_marginTop="4.6dp" android:layout_marginRight="4.66dp" android:layout_marginBottom="3.33dp" android:layout_toLeftOf="@+id/stop_info_map"/>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:paddingTop="16.66dp" android:paddingBottom="6.6dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@+id/transfer_start_add" android:background="@drawable/btn_start_stop_normal" android:layout_width="73.66dp" android:layout_height="28.66dp"/>
+            <Button android:id="@+id/transfer_end_add" android:background="@drawable/btn_end_stop_normal" android:layout_width="73.66dp" android:layout_height="28.66dp" android:layout_marginLeft="3.33dp"/>
+        </LinearLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginBottom="7dp" android:layout_weight="1">
+            <ListView android:id="@+id/stop_information_list" android:background="@drawable/list_border" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.656dp" android:layout_marginRight="10.656dp" android:layout_marginBottom="6.66dp" android:drawSelectorOnTop="false" android:scrollingCache="false" android:divider="#9abbd1" android:dividerHeight="0.6dp" android:fastScrollEnabled="true"/>
+            <ProgressBar android:layout_gravity="center" android:id="@+id/stop_information_progress" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

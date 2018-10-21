@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/edit_input_background" android:paddingLeft="8.33dp" android:paddingTop="4.66dp" android:paddingRight="8.33dp" android:paddingBottom="3.66dp" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:textSize="13.33dp" android:id="@+id/search_root_edittext" android:background="@drawable/input_background" android:paddingLeft="10dp" android:paddingTop="0.66dp" android:paddingRight="6.66dp" android:layout_width="match_parent" android:layout_height="31.66dp" android:hint="@string/search_root_edittext_hint" android:singleLine="true" android:inputType="number"/>
+    </RelativeLayout>
+    <View android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="0.6dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/search_route_background" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:paddingTop="5.99dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+            <Button android:id="@+id/search_root_total_button" android:background="@drawable/btn_route_all" android:layout_width="match_parent" android:layout_height="35.33dp" android:layout_weight="1"/>
+            <Button android:id="@+id/search_root_ib_button" android:background="@drawable/btn_route_bus" android:layout_width="match_parent" android:layout_height="35.33dp" android:layout_weight="1"/>
+            <Button android:id="@+id/search_root_js_button" android:background="@drawable/btn_route_express" android:layout_width="match_parent" android:layout_height="35.33dp" android:layout_weight="1"/>
+            <Button android:id="@+id/search_root_gs_button" android:background="@drawable/btn_route_jisun" android:layout_width="match_parent" android:layout_height="35.33dp" android:layout_weight="1"/>
+            <Button android:id="@+id/search_root_me_button" android:background="@drawable/btn_route_town" android:layout_width="match_parent" android:layout_height="35.33dp" android:layout_weight="1"/>
+            <Button android:id="@+id/search_root_lg_button" android:background="@drawable/btn_route_limousine" android:layout_width="match_parent" android:layout_height="35.33dp" android:layout_weight="1"/>
+        </LinearLayout>
+        <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="#000000" android:id="@+id/search_route_textview" android:background="@drawable/list_header" android:paddingLeft="7.26dp" android:paddingTop="3.96dp" android:paddingBottom="3.96dp" android:layout_width="match_parent" android:layout_height="23dp" android:layout_marginLeft="8.22dp" android:layout_marginTop="8.66dp" android:layout_marginRight="8.22dp" android:text="@string/search_bus_stop_textview"/>
+        <ListView android:id="@+id/search_root_listview" android:paddingLeft="6.66dp" android:paddingRight="6.66dp" android:paddingBottom="6.66dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="8.66dp" android:scrollingCache="false" android:divider="@color/second_line_background" android:dividerHeight="0.6dp" android:layout_weight="1" android:fastScrollEnabled="true"/>
+        <ListView android:id="@+id/search_recent_searchlistview" android:paddingLeft="6.66dp" android:paddingRight="6.66dp" android:paddingBottom="6.66dp" android:layout_width="match_parent" android:layout_height="0dp" android:scrollingCache="false" android:divider="@color/second_line_background" android:dividerHeight="0.6dp" android:layout_weight="1" android:fastScrollEnabled="true"/>
+    </LinearLayout>
+</LinearLayout>

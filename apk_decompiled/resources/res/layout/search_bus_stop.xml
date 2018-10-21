@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/search_bus_stop_background_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/stop_input_background" android:background="@drawable/edit_input_background" android:paddingLeft="8.33dp" android:paddingTop="4.66dp" android:paddingRight="8.33dp" android:paddingBottom="3.66dp" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:textSize="13.33dp" android:id="@+id/search_bus_stop_edittext" android:background="@drawable/input_background" android:paddingLeft="7.33dp" android:paddingTop="0.66dp" android:paddingRight="6.66dp" android:layout_width="0dp" android:layout_height="31.66dp" android:hint="@string/search_bus_stop_edittexthint" android:singleLine="true" android:drawableLeft="@drawable/icon_search" android:layout_weight="0.7"/>
+        <Button android:id="@+id/search_bus_stop_qrbutton" android:background="@drawable/qrcode_pressed" android:layout_width="29.6667dp" android:layout_height="29dp" android:layout_marginLeft="4.6dp"/>
+        <Button android:id="@+id/search_bus_stop_mapbutton" android:background="@drawable/map_btn_selector" android:layout_width="29.6667dp" android:layout_height="29dp" android:layout_marginLeft="4.6dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:padding="6.6dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <TextView android:textSize="7.92sp" android:textStyle="bold" android:textColor="#000000" android:id="@+id/search_bus_stop_textview" android:background="@drawable/list_header" android:paddingLeft="7.26dp" android:paddingTop="3.96dp" android:layout_width="match_parent" android:layout_height="15.84dp" android:text="@string/search_bus_stop_textview"/>
+        <ListView android:id="@+id/search_bus_stop_listview" android:background="@drawable/list_border" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scrollingCache="false" android:divider="@color/list_divider_color" android:dividerHeight="0.6dp" android:fastScrollEnabled="true"/>
+        <ListView android:id="@+id/search_bus_stop_recent_listview" android:background="@drawable/list_border" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scrollingCache="false" android:divider="@color/list_divider_color" android:dividerHeight="0.6dp" android:fastScrollEnabled="true"/>
+        <TextView android:textSize="20sp" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center" android:id="@+id/search_bus_stop_emptyview" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

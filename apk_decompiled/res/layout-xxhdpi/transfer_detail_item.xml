@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="vertical" n1:id="@id/transdetail_item_row" n1:background="@color/list_row_color" n1:paddingTop="8.0dip" n1:paddingBottom="12.0dip" n1:layout_width="fill_parent" n1:layout_height="67.32999dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/transdetail_bus_icon" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="7.299988dip" n1:scaleType="center" />
+    <LinearLayout n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="4.6999817dip" n1:layout_toRightOf="@id/transdetail_bus_icon">
+        <TextView n1:textSize="12.199982sp" n1:textStyle="bold" n1:id="@id/transdetail_bus_type_number" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+        <TextView n1:textSize="8.359985sp" n1:textColor="#ff000000" n1:id="@id/transdetail_route_description" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="3.0dip" />
+        <LinearLayout n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="3.0dip">
+            <TextView n1:textSize="8.359985sp" n1:textColor="#ffe2473f" n1:id="@id/transdetail_arrival_time_txt" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+            <ImageView n1:layout_width="2.0dip" n1:layout_height="5.0dip" n1:layout_marginLeft="3.0dip" n1:layout_marginTop="4.0dip" n1:layout_marginRight="3.0dip" n1:src="@drawable/transdetail_coming_time_separator" />
+            <TextView n1:textSize="8.359985sp" n1:textColor="#ffe2473f" n1:id="@id/transdetail_arrival_stopcnt_txt" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

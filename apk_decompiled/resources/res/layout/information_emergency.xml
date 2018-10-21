@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="#000000" android:id="@+id/information_header" android:background="@drawable/list_header" android:paddingLeft="7.26dp" android:paddingTop="3.96dp" android:layout_width="match_parent" android:layout_height="40.84dp" android:layout_marginLeft="6.66dp" android:layout_marginRight="6.66dp" android:text="@string/info_emergen_title"/>
+    <ImageView android:id="@+id/information_emergency_gallery" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.66dp" android:layout_marginRight="6.66dp" android:layout_marginBottom="6.66dp" android:scaleType="fitXY"/>
+</LinearLayout>

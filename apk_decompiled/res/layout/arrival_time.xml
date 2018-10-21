@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:orientation="horizontal" n1:id="@id/arrival_stop_background" n1:background="#ff77add1" n1:paddingLeft="6.659973dip" n1:layout_width="fill_parent" n1:layout_height="38.97dip">
+            <LinearLayout n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                <TextView n1:textSize="15.0dip" n1:textStyle="bold" n1:textColor="#ffffffff" n1:id="@id/arrival_stop_name" n1:paddingTop="4.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+                <TextView n1:textSize="11.0dip" n1:textStyle="bold" n1:textColor="#ffdce8f2" n1:id="@id/arrival_stop_id" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.559998dip" />
+            </LinearLayout>
+            <LinearLayout n1:gravity="right" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginRight="6.5999756dip">
+                <Button n1:id="@id/arrival_time_add_favorite" n1:background="@drawable/btn_com_favorite" n1:layout_width="29.666656dip" n1:layout_height="29.0dip" n1:layout_marginTop="4.3329773dip" n1:layout_marginBottom="1.3199768dip" />
+                <Button n1:linksClickable="true" n1:id="@id/icon_refresh_stop_infomation" n1:background="@drawable/btn_com_refresh" n1:layout_width="29.666656dip" n1:layout_height="29.0dip" n1:layout_marginLeft="2.2199707dip" n1:layout_marginTop="4.3329773dip" n1:layout_marginBottom="1.3199768dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <ScrollView n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <LinearLayout n1:orientation="vertical" n1:id="@id/arrival_background" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0">
+                <RelativeLayout n1:id="@id/arrival_bus_info" n1:paddingLeft="6.659973dip" n1:paddingBottom="7.2599792dip" n1:layout_width="fill_parent" n1:layout_height="33.659973dip" n1:layout_marginLeft="6.659973dip" n1:layout_marginTop="7.8799744dip" n1:layout_marginRight="6.659973dip">
+                    <ImageView n1:id="@id/image_bus_type" n1:layout_width="21.333313dip" n1:layout_height="21.333313dip" n1:layout_marginTop="6.659973dip" n1:src="@drawable/icon_bus" n1:scaleType="fitXY" />
+                    <TextView n1:textSize="16.0dip" n1:textStyle="bold" n1:textColor="#ffffffff" n1:id="@id/bus_type_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="4.659973dip" n1:layout_marginTop="6.659973dip" n1:layout_toRightOf="@id/image_bus_type" />
+                    <TextView n1:textSize="19.329987dip" n1:textStyle="bold" n1:textColor="#ffffffff" n1:id="@id/comming_bus_number" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="4.659973dip" n1:layout_marginTop="4.659973dip" n1:layout_toRightOf="@id/bus_type_text" />
+                    <TextView n1:textSize="10.329987dip" n1:textStyle="bold" n1:textColor="#ffffffff" n1:ellipsize="end" n1:id="@id/bus_destination_info" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="20.0dip" n1:layout_marginTop="10.0dip" n1:layout_marginRight="6.5999756dip" n1:maxLines="1" n1:layout_toRightOf="@id/comming_bus_number" n1:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <LinearLayout n1:layout_gravity="center" n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="23.75998dip">
+                    <include n1:id="@id/arrival_bus_no1" layout="@layout/arrival_time_item" />
+                    <include n1:id="@id/arrival_bus_no2" layout="@layout/arrival_time_item" />
+                </LinearLayout>
+                <LinearLayout n1:layout_gravity="center" n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="23.75998dip" n1:layout_marginBottom="10.0dip">
+                    <include n1:id="@id/arrival_bus_no3" layout="@layout/arrival_time_item" />
+                    <include n1:id="@id/arrival_bus_no4" layout="@layout/arrival_time_item" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <ProgressBar n1:layout_gravity="center" n1:id="@id/arrival_bus_progress" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+</FrameLayout>

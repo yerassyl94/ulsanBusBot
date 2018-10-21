@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="@drawable/route_timetable_row" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="horizontal" n1:id="@id/time_hour_layout" n1:layout_width="80.0dip" n1:layout_height="wrap_content">
+        <TextView n1:textSize="18.329987dip" n1:textStyle="bold" n1:id="@id/am_time_type" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="13.299988dip" n1:layout_marginTop="6.5999756dip" n1:text="@string/route_timetable_am" style="@style/am_text_style" />
+        <TextView n1:textSize="18.329987dip" n1:textStyle="bold" n1:id="@id/pm_time_type" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="13.299988sp" n1:layout_marginTop="6.5999756sp" n1:text="@string/route_timetable_pm" style="@style/pm_text_style" />
+        <TextView n1:textSize="20.329987dip" n1:textStyle="bold" n1:id="@id/am_time_hour" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="3.2999878sp" n1:layout_marginTop="6.5999756sp" style="@style/am_text_style" />
+        <TextView n1:textSize="20.329987dip" n1:textStyle="bold" n1:id="@id/pm_time_hour" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="3.2999878sp" n1:layout_marginTop="6.5999756sp" style="@style/pm_text_style" />
+    </LinearLayout>
+    <LinearLayout n1:orientation="vertical" n1:id="@id/time_min_layout" n1:paddingTop="6.659973dip" n1:paddingBottom="6.659973dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="20.0dip" n1:layout_toRightOf="@id/time_hour_layout" />
+    <LinearLayout n1:orientation="vertical" n1:id="@id/time_remark_layout" n1:paddingTop="6.659973dip" n1:paddingBottom="6.659973dip" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.659973dip" n1:layout_toRightOf="@id/time_min_layout" />
+    <LinearLayout n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="10.599976dip" n1:layout_alignParentRight="true">
+        <TextView n1:textSize="13.0dip" n1:textStyle="bold" n1:id="@id/time_state_txt" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="6.659973sp" n1:layout_marginRight="6.659973dip" />
+        <ImageView n1:id="@id/img_schedule" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="6.659973dip" />
+    </LinearLayout>
+</RelativeLayout>

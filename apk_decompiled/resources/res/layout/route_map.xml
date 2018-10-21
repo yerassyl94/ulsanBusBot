@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <net.daum.mf.map.api.MapView android:id="@+id/route_map" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/linearLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@+id/route_map" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <Button android:textSize="8.2dp" android:textStyle="bold" android:id="@+id/btn_switch_route" android:background="@drawable/btn_com_empty" android:padding="6.666dp" android:layout_width="wrap_content" android:layout_height="22.66dp" android:layout_marginRight="6.66dp" android:layout_marginBottom="6.66dp" android:text="상/하행 변경"/>
+        <Button android:textSize="8.2dp" android:textStyle="bold" android:id="@+id/btn_route_refresh" android:background="@drawable/btn_com_empty" android:padding="6.666dp" android:paddingRight="6.66dp" android:layout_width="wrap_content" android:layout_height="22.66dp" android:layout_marginRight="7.2dp" android:layout_marginBottom="6.66dp" android:text="새로고침"/>
+        <Button android:textSize="8.2dp" android:textStyle="bold" android:id="@+id/btn_route_mypos" android:background="@drawable/btn_com_empty" android:padding="6.666dp" android:paddingRight="6.66dp" android:layout_width="wrap_content" android:layout_height="22.66dp" android:layout_marginRight="7.2dp" android:layout_marginBottom="6.66dp" android:text="내 위치"/>
+    </LinearLayout>
+    <ProgressBar android:id="@+id/progressBar1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

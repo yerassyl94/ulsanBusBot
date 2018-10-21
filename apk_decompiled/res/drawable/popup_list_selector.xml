@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item n1:state_selected="false" n1:state_pressed="false" n1:drawable="@color/popup_list_row_color"
+      xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <item n2:state_pressed="true" n2:drawable="@color/popup_list_sel_color"
+      xmlns:n2="http://schemas.android.com/apk/res/android" />
+    <item n3:state_selected="true" n3:state_pressed="false" n3:drawable="@color/popup_list_sel_color"
+      xmlns:n3="http://schemas.android.com/apk/res/android" />
+</selector>

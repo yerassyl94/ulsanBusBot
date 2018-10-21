@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/favorite_item_row" n1:background="@drawable/list_selector" n1:paddingTop="4.0dip" n1:paddingBottom="4.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+        <ImageView n1:layout_gravity="center_vertical" n1:id="@id/favorite_category_image" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="6.659973dip" n1:scaleType="fitXY" />
+        <LinearLayout n1:layout_gravity="center_vertical" n1:orientation="vertical" n1:id="@id/favorite_item1_layout" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="3.3299866dip">
+            <TextView n1:textStyle="bold" n1:layout_gravity="center" n1:id="@id/favorite_text_item1" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+            <TextView n1:textStyle="bold" n1:id="@id/favorite_text_sub1" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView n1:textStyle="bold" n1:layout_gravity="center_vertical" n1:id="@id/favorite_text_item2" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="3.3299866dip" />
+    </LinearLayout>
+    <Button n1:id="@id/favorite_btn_alarm" n1:background="@drawable/btn_favorite_alarm" n1:focusable="false" n1:visibility="gone" n1:layout_width="26.333313dip" n1:layout_height="24.0dip" n1:layout_marginTop="2.0dip" n1:layout_marginRight="3.0dip" n1:layout_alignParentRight="true" />
+</RelativeLayout>

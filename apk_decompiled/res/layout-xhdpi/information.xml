@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/information_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:src="@drawable/background_nomal" n1:scaleType="fitXY" />
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:paddingTop="4.659973dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <Button n1:id="@id/information_notice_button" n1:background="@drawable/tab_info_notice" n1:layout_width="66.66dip" n1:layout_height="35.659973dip" />
+            <Button n1:id="@id/information_verinfor_button" n1:background="@drawable/tab_info_version" n1:layout_width="66.66dip" n1:layout_height="35.659973dip" />
+            <Button n1:id="@id/information_emergency_button" n1:background="@drawable/tab_info_emergen" n1:layout_width="66.66dip" n1:layout_height="35.659973dip" />
+            <Button n1:id="@id/information_manual_button" n1:background="@drawable/tab_info_manual" n1:layout_width="66.66dip" n1:layout_height="35.659973dip" />
+        </LinearLayout>
+        <LinearLayout n1:orientation="horizontal" n1:id="@id/information_dynamic_layout" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_marginTop="6.0dip" n1:layout_weight="1.0" />
+    </LinearLayout>
+</FrameLayout>

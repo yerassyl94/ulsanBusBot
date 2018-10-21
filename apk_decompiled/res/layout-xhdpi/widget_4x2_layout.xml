@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="@drawable/background_4x2" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textSize="16.0dip" n1:textColor="#ff2c3945" n1:id="@id/widget_text_stopname" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="6.0dip" n1:layout_centerHorizontal="true" />
+    <Button n1:id="@id/widget_refresh_info" n1:background="@drawable/btn_icon_refresh4x2" n1:layout_width="30.0dip" n1:layout_height="30.0dip" n1:layout_marginTop="5.0dip" n1:layout_marginRight="4.659973dip" n1:layout_alignRight="@id/widget_text_stopname" n1:layout_alignParentRight="true" />
+    <ListView n1:id="@id/widget_arrivallist" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginTop="10.0dip" n1:layout_marginBottom="5.0dip" n1:scrollingCache="false" n1:layout_below="@id/widget_text_stopname" />
+    <ProgressBar n1:id="@id/widget3_progress" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true" />
+</RelativeLayout>

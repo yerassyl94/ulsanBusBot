@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@id/encode_view" n1:background="@color/encode_view" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:fillViewport="true"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:layout_gravity="center_vertical" n1:id="@id/image_view" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:scaleType="center" />
+    <ScrollView n1:gravity="center" n1:layout_gravity="center_vertical" n1:layout_width="wrap_content" n1:layout_height="fill_parent">
+        <TextView n1:textSize="18.0sp" n1:textColor="@color/contents_text" n1:gravity="center" n1:layout_gravity="center_vertical" n1:id="@id/contents_text_view" n1:paddingTop="8.0dip" n1:paddingRight="8.0dip" n1:paddingBottom="8.0dip" n1:layout_width="wrap_content" n1:layout_height="fill_parent" />
+    </ScrollView>
+</LinearLayout>

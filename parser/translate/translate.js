@@ -10,7 +10,7 @@ function firstElementOfList(list) {
 }
 
 function formatTranslations(list) {
-  return flatten(list.map(firstElementOfList));
+  return flatten(list.versionMap(firstElementOfList));
 }
 
 function sliceList(list) {
@@ -23,7 +23,7 @@ function sliceList(list) {
 
 function getTranslationPromises(list, target) {
   const slicedList = sliceList(list);
-  return slicedList.map(Translate.translator(target));
+  return slicedList.versionMap(Translate.translator(target));
 }
 
 function translateList(list, target) {

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/arrival_bus_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/arrival_bus_image1" android:layout_width="128.7dp" android:layout_height="54.12dp" android:layout_marginLeft="13.332dp">
+        <TextView android:textSize="9dp" android:textStyle="bold" android:textColor="#ffffff" android:id="@+id/arrival_bus_order" android:paddingLeft="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp"/>
+    </FrameLayout>
+    <RelativeLayout android:background="@drawable/list_box" android:layout_width="150.48dp" android:layout_height="100.5dp" android:layout_marginLeft="6.66dp" android:layout_marginTop="7.326dp">
+        <TextView android:textSize="11dp" android:textStyle="bold" android:textColor="#000000" android:id="@+id/arrival_bus_order_text" android:layout_width="150.48dp" android:layout_height="20.84dp" android:layout_marginLeft="7.26dp" android:layout_marginTop="3.96dp"/>
+        <TextView android:textSize="14.6667dp" android:textColor="#222222" android:gravity="center_horizontal" android:id="@+id/arrival_bus_info" android:paddingTop="0.66dp" android:layout_width="150.48dp" android:layout_height="18.32dp" android:layout_below="@+id/arrival_bus_order_text"/>
+        <TextView android:textSize="14.6667dp" android:textColor="#e36042" android:gravity="center_horizontal" android:id="@+id/arrival_bus_time" android:layout_width="150.48dp" android:layout_height="18.32dp" android:layout_marginTop="6.6dp" android:layout_below="@+id/arrival_bus_info"/>
+        <TextView android:textSize="14.6667dp" android:textColor="#222222" android:gravity="center_horizontal" android:id="@+id/arrival_bus_remain_cnt" android:layout_width="150.48dp" android:layout_height="18.32dp" android:layout_marginTop="6.6dp" android:layout_below="@+id/arrival_bus_time"/>
+    </RelativeLayout>
+</LinearLayout>
